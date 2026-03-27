@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cmuu7db6styp5"]
+
+[ext_resource type="PackedScene" uid="uid://be7p4h7fa2hqf" path="res://brittany.tscn" id="1_80nbo"]
+[ext_resource type="Texture2D" uid="uid://cdo0ha3jlkf46" path="res://scnes/pixil-frame-0.png" id="1_e2o6t"]
+[ext_resource type="Script" uid="uid://bhui4q46uygr4" path="res://point_lightMAIN.gd" id="3_feb5d"]
+
+[sub_resource type="Gradient" id="Gradient_e2o6t"]
+offsets = PackedFloat32Array(0.33734939, 0.44879517, 0.72289157, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 0.93385214, 0.93385214, 0.93385214, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_feb5d"]
+gradient = SubResource("Gradient_e2o6t")
+fill = 1
+fill_from = Vector2(0.51304346, 0.5195652)
+fill_to = Vector2(0.14565217, 0)
+
+[node name="Node2D" type="Node2D" unique_id=1610711930]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1474354823]
+modulate = Color(1.951586, 1.951586, 1.951586, 1)
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -182.0
+offset_top = -102.0
+offset_right = 180.0
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_e2o6t")
+stretch_mode = 1
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1619842464]
+position = Vector2(-1.5, 1)
+scale = Vector2(5.671875, 3.1875)
+color = Color(0, 0, 0, 1)
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=2059444548]
+position = Vector2(0, -1.5000029)
+scale = Vector2(5.671875, 3.171875)
+energy = 1.6
+texture = SubResource("GradientTexture2D_feb5d")
+script = ExtResource("3_feb5d")
+
+[node name="Game" parent="." unique_id=158434882 instance=ExtResource("1_80nbo")]

@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://1r2o3x6j1emu"]
+
+[ext_resource type="Texture2D" uid="uid://cwfo05qsnomrk" path="res://assets/petal4-pixilart.png" id="1_34a1i"]
+[ext_resource type="Script" uid="uid://b4vf6x874g8pn" path="res://scnes/characters/scripts/point_light_2d5.gd" id="2_s5e1w"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_776f0"]
+radius = 19.026299
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wvisk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_34a1i")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_s5e1w"]
+offsets = PackedFloat32Array(0.015060241, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_wsumn"]
+gradient = SubResource("Gradient_s5e1w")
+fill = 1
+fill_from = Vector2(0.50652176, 0.47391304)
+fill_to = Vector2(0.67826086, 0.2)
+
+[node name="flower5" type="CharacterBody2D" unique_id=2032465407]
+scale = Vector2(1.61, 1.61)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=652754751]
+position = Vector2(7, -8)
+scale = Vector2(0.64, 0.64)
+shape = SubResource("CircleShape2D_776f0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=756120334]
+modulate = Color(0.5700211, 0.7953744, 1.0061888, 1)
+position = Vector2(5, -7)
+scale = Vector2(0.36, 0.36)
+sprite_frames = SubResource("SpriteFrames_wvisk")
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=2031667638]
+position = Vector2(6, -8)
+scale = Vector2(0.17493205, 0.19229317)
+color = Color(5.9371605, 0.636039, 0, 1)
+energy = 1.24
+texture = SubResource("GradientTexture2D_wsumn")
+texture_scale = 0.9
+script = ExtResource("2_s5e1w")
