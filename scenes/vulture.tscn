@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://5ey6ns8gh8t5"]
+
+[ext_resource type="Texture2D" uid="uid://cwrgfxc7fewwf" path="res://vulturegwc.png" id="1_aaqyy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_aaqyy"]
+radius = 45.276924
+
+[node name="CharacterBody2D2" type="CharacterBody2D" unique_id=451349671]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1989233031]
+texture_filter = 1
+position = Vector2(343.00003, 177.33333)
+rotation = 3.1372602
+scale = Vector2(-0.4149055, -0.34225512)
+texture = ExtResource("1_aaqyy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=724935934]
+position = Vector2(344, 174)
+shape = SubResource("CircleShape2D_aaqyy")
