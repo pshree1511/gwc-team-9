@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmib5j0h5csny"
-path="res://.godot/imported/morsecode.png-227855ef6bdb1cfdb8ec7063ee1cf09e.ctex"
+uid="uid://2d6g0rbehj00"
+path="res://.godot/imported/pixil-frame-0 (1).png-030a89392f46035a624c8c4ff4a45b2d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scnes/characters/morsecode.png"
-dest_files=["res://.godot/imported/morsecode.png-227855ef6bdb1cfdb8ec7063ee1cf09e.ctex"]
+source_file="res://scnes/characters/pixil-frame-0 (1).png"
+dest_files=["res://.godot/imported/pixil-frame-0 (1).png-030a89392f46035a624c8c4ff4a45b2d.ctex"]
 
 [params]
 

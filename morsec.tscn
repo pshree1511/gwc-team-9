@@ -1,14 +1,16 @@
 [gd_scene format=3 uid="uid://b7twr2qmtxsx1"]
 
-[ext_resource type="Script" uid="uid://cfvjbf7482rfk" path="res://scripts/menu.gd" id="1_i5yjx"]
+[ext_resource type="Texture2D" uid="uid://2d6g0rbehj00" path="res://scnes/characters/pixil-frame-0 (1).png" id="1_i5yjx"]
 
-[node name="Popup" type="Popup" unique_id=1759263459]
+[node name="Window" type="Window" unique_id=864730816]
 oversampling_override = 1.0
-title = "??"
-visible = true
-
-[node name="Window" type="Window" parent="." unique_id=1539390747]
-oversampling_override = 1.0
-title = "window"
 position = Vector2i(0, 36)
-script = ExtResource("1_i5yjx")
+size = Vector2i(169, 206)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=485044401]
+texture_filter = 2
+position = Vector2(84.88501, 103.45672)
+scale = Vector2(-0.28002617, -0.2572668)
+texture = ExtResource("1_i5yjx")
+flip_h = true
+flip_v = true

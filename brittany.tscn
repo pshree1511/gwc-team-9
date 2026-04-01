@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c4ym7dsiuuwft" path="res://scnes/characters/flower_3.tscn" id="4_0hol4"]
 [ext_resource type="PackedScene" uid="uid://cl7suw36y0sg1" path="res://scnes/characters/flower_4.tscn" id="5_q6r6c"]
 [ext_resource type="PackedScene" uid="uid://1r2o3x6j1emu" path="res://scnes/characters/flower_5.tscn" id="6_7mycd"]
+[ext_resource type="PackedScene" uid="uid://cryihyqi8a04e" path="res://scnes/window.tscn" id="9_bmxam"]
 
 [sub_resource type="Gradient" id="Gradient_g20ka"]
 offsets = PackedFloat32Array(0.13855422, 0.18674698, 1)
@@ -76,3 +77,5 @@ script = ExtResource("2_l71hm")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1535284276]
 zoom = Vector2(2.98, 2.98)
+
+[node name="Window" parent="." unique_id=864730816 instance=ExtResource("9_bmxam")]
