@@ -1,11 +1,7 @@
-[gd_scene format=3 uid="uid://djjo65am8fqb4"]
+[gd_scene format=3 uid="uid://cmuu7db6styp5"]
 
-[ext_resource type="Texture2D" uid="uid://b7ckmsvht1d80" path="res://icon.svg" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://cmuu7db6styp5" path="res://game.tscn" id="1_842gc"]
 
-[node name="Game" type="Node2D" unique_id=1383127109]
+[node name="Node2D" type="Node2D" unique_id=1671629521]
 
-[node name="Node2D" type="Node2D" parent="." unique_id=831785853]
-
-[node name="Icon" type="Sprite2D" parent="." unique_id=1762999784]
-position = Vector2(247, 129)
-texture = ExtResource("1_80nbo")
+[node name="Node2D" parent="." unique_id=1610711930 instance=ExtResource("1_842gc")]

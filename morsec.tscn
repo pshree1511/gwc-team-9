@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b7twr2qmtxsx1"]
+
+[ext_resource type="Script" uid="uid://cfvjbf7482rfk" path="res://scripts/menu.gd" id="1_i5yjx"]
+
+[node name="Popup" type="Popup" unique_id=1759263459]
+oversampling_override = 1.0
+title = "??"
+visible = true
+
+[node name="Window" type="Window" parent="." unique_id=1539390747]
+oversampling_override = 1.0
+title = "window"
+position = Vector2i(0, 36)
+script = ExtResource("1_i5yjx")

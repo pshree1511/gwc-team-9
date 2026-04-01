@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bah8q4xhwak2i"]
+
+[ext_resource type="Texture2D" uid="uid://bfxy4qb4p0tgt" path="res://scnes/morsecode.png" id="1_lssjy"]
+
+[node name="TextureRect" type="TextureRect" unique_id=1921239637]
+texture_filter = 1
+offset_right = 151.0
+offset_bottom = 182.0
+texture = ExtResource("1_lssjy")
+expand_mode = 1
