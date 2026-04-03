@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cr107clwegm52"]
+[gd_scene format=3 uid="uid://cu810qiak6wea"]
 
 [ext_resource type="Texture2D" uid="uid://x0lpg8hoxuub" path="res://assets/pixilart-drawing.png" id="1_l7i6p"]
 [ext_resource type="Script" uid="uid://cndnj67oww3of" path="res://scnes/characters/scripts/point_lightbutterfly.gd" id="2_3tdnn"]

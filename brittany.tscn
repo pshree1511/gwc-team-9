@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://be7p4h7fa2hqf"]
 
-[ext_resource type="PackedScene" uid="uid://cr107clwegm52" path="res://scnes/characters/butterfly.tscn" id="1_0e48y"]
+[ext_resource type="PackedScene" uid="uid://cu810qiak6wea" path="res://scnes/characters/butterfly.tscn" id="1_0e48y"]
 [ext_resource type="PackedScene" uid="uid://lnpfjj5vtwty" path="res://scnes/characters/flower_1.tscn" id="2_epypp"]
 [ext_resource type="Script" uid="uid://bhui4q46uygr4" path="res://point_lightMAIN.gd" id="2_l71hm"]
 [ext_resource type="PackedScene" uid="uid://cw3fos7kyuqoo" path="res://scnes/characters/flower_2.tscn" id="3_epypp"]
@@ -9,21 +9,21 @@
 [ext_resource type="PackedScene" uid="uid://cl7suw36y0sg1" path="res://scnes/characters/flower_4.tscn" id="5_q6r6c"]
 [ext_resource type="PackedScene" uid="uid://1r2o3x6j1emu" path="res://scnes/characters/flower_5.tscn" id="6_7mycd"]
 [ext_resource type="PackedScene" uid="uid://cryihyqi8a04e" path="res://scnes/window.tscn" id="9_bmxam"]
+[ext_resource type="PackedScene" uid="uid://dgm3efvn66dr5" path="res://textbox.tscn" id="10_l71hm"]
 
 [sub_resource type="Gradient" id="Gradient_g20ka"]
-offsets = PackedFloat32Array(0.13855422, 0.18674698, 1)
+offsets = PackedFloat32Array(0.13855422, 0.16566265, 1)
 colors = PackedColorArray(1, 1, 1, 1, 0.8846154, 0.8846154, 0.8846154, 1, 0, 0, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_fy71t"]
 gradient = SubResource("Gradient_g20ka")
 fill = 1
-fill_from = Vector2(0.5043478, 0.62391305)
+fill_from = Vector2(0.5043478, 0.4869565)
 fill_to = Vector2(0.4869565, 0)
 
 [node name="Game" type="Node2D" unique_id=158434882]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1572099267]
-visible = false
 position = Vector2(-0.7500076, 0.4999962)
 scale = Vector2(6.0234375, 3.390625)
 color = Color(0.14225578, 0.14225581, 0.14225575, 1)
@@ -67,9 +67,8 @@ position = Vector2(-23.948118, 13.419355)
 scale = Vector2(0.20088197, 0.35686636)
 
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=271719708]
-visible = false
-position = Vector2(-0.7500076, 1.4999962)
-scale = Vector2(6.0234375, 3.390625)
+position = Vector2(0, 1.0000002)
+scale = Vector2(3.9609375, 3.578125)
 color = Color(0.9019608, 1, 1, 1)
 energy = 3.47
 texture = SubResource("GradientTexture2D_fy71t")
@@ -79,3 +78,9 @@ script = ExtResource("2_l71hm")
 zoom = Vector2(2.98, 2.98)
 
 [node name="Window" parent="." unique_id=864730816 instance=ExtResource("9_bmxam")]
+
+[node name="Node" parent="." unique_id=1525270562 instance=ExtResource("10_l71hm")]
+offset_left = -106.0
+offset_top = 34.0
+offset_right = -66.0
+offset_bottom = 74.0
