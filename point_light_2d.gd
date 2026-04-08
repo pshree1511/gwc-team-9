@@ -4,13 +4,13 @@ extends PointLight2D
 @export var unitTime = 0.2
 @export var delay=3
 @export var flashpattern = ".."
-var solved=false
+
 
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	while !solved:
+	while !globals.solved:
 		await get_tree().create_timer(unitTime*delay).timeout
 		await flashWord(flashpattern)
 		await get_tree().create_timer(unitTime*5).timeout

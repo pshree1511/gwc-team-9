@@ -26,3 +26,5 @@ offset_left = 239.0
 offset_top = 42.0
 offset_right = 265.0
 offset_bottom = 66.0
+
+[connection signal="text_submitted" from="LineEdit2" to="." method="_on_line_edit_2_text_submitted"]

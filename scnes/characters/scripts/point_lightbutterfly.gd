@@ -2,7 +2,6 @@ extends PointLight2D
 
 @onready var light = self
 @export var unitTime = 0.2
-var solved=false
 var rng = RandomNumberGenerator.new()
 
 
@@ -14,9 +13,6 @@ func _ready() -> void:
 	flash()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
 
 func lighton():
 	light.visible=true
@@ -26,7 +22,7 @@ func lightoff():
 	
 func flash():
 	rng.randomize()
-	while !solved:
+	while !globals.solved:
 		var random = rng.randf_range(0.0,0.5)
 		await get_tree().create_timer(random).timeout
 		lighton()

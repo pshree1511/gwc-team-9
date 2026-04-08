@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://x0lpg8hoxuub" path="res://assets/pixilart-drawing.png" id="1_l7i6p"]
 [ext_resource type="Script" uid="uid://cndnj67oww3of" path="res://scnes/characters/scripts/point_lightbutterfly.gd" id="2_3tdnn"]
+[ext_resource type="Texture2D" uid="uid://dkyvbfvha6j7h" path="res://assets/pixil-frame-0 (2).png" id="3_y5cu7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fn0p1"]
 animations = [{
@@ -27,12 +28,26 @@ fill = 1
 fill_from = Vector2(0.54130435, 0.5195652)
 fill_to = Vector2(0.8565217, 0.2347826)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_nqc85"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_y5cu7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="butterfly" type="CharacterBody2D" unique_id=1133865206]
 scale = Vector2(1.78, 1.78)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1846038287]
+unique_name_in_owner = true
+self_modulate = Color(0.8762517, 0.8762517, 0.8762517, 1)
 sprite_frames = SubResource("SpriteFrames_fn0p1")
 animation = &"idle"
+frame_progress = 0.78374135
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1740798225]
 visible = false
@@ -52,3 +67,16 @@ scale = Vector2(0.2192766, 0.3992274)
 energy = 2.12
 texture = SubResource("GradientTexture2D_3tdnn")
 script = ExtResource("2_3tdnn")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=577539769]
+visible = false
+self_modulate = Color(0.5098696, 0.43173385, 0.3313585, 1)
+scale = Vector2(0.9999999, 0.9999999)
+sprite_frames = SubResource("SpriteFrames_nqc85")
+
+[node name="PointLight2D3" type="PointLight2D" parent="AnimatedSprite2D2" unique_id=236673169]
+position = Vector2(-8.42697, -15.730339)
+scale = Vector2(0.9852969, 1.0566188)
+color = Color(0.564048, 0.31678793, 0.24186856, 1)
+energy = 2.87
+texture = SubResource("GradientTexture2D_3tdnn")
