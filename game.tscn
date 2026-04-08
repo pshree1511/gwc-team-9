@@ -1,11 +1,52 @@
 [gd_scene format=3 uid="uid://djjo65am8fqb4"]
 
-[ext_resource type="Texture2D" uid="uid://b7ckmsvht1d80" path="res://icon.svg" id="1_80nbo"]
+[ext_resource type="Script" uid="uid://ceuhcri1h6wp3" path="res://sprite_2d.gd" id="2_ryrav"]
+[ext_resource type="Texture2D" uid="uid://ba0hu6s4c3auc" path="res://pixil-frame-0 (3).png" id="3_eow3j"]
+[ext_resource type="Texture2D" uid="uid://dgf5q2fp1ro7i" path="res://pixil-frame-0 (2).png" id="3_fc0e3"]
+[ext_resource type="Texture2D" uid="uid://cn4honfvnwari" path="res://pixil-frame-0 (5).png" id="4_j5wjh"]
+[ext_resource type="Texture2D" uid="uid://bnfauayv71bhb" path="res://pixil-frame-0 (4).png" id="5_vef74"]
+[ext_resource type="Texture2D" uid="uid://c1hmpiayrsy4h" path="res://pixilart-drawing (3).png" id="6_hve3p"]
 
 [node name="Game" type="Node2D" unique_id=1383127109]
 
 [node name="Node2D" type="Node2D" parent="." unique_id=831785853]
 
-[node name="Icon" type="Sprite2D" parent="." unique_id=1762999784]
-position = Vector2(247, 129)
-texture = ExtResource("1_80nbo")
+[node name="Tree" type="Node2D" parent="." unique_id=2029284865]
+
+[node name="Sprite2D" type="Sprite2D" parent="Tree" unique_id=240758072]
+position = Vector2(574.5, 322.75)
+scale = Vector2(3.596875, 3.602778)
+texture = ExtResource("3_fc0e3")
+script = ExtResource("2_ryrav")
+
+[node name="TextureButton" type="TextureButton" parent="Tree/Sprite2D" unique_id=1299217192]
+offset_left = -88.8271
+offset_top = -27.96453
+offset_right = -38.827103
+offset_bottom = 22.03547
+texture_normal = ExtResource("3_eow3j")
+
+[node name="TextureButton2" type="TextureButton" parent="Tree/Sprite2D" unique_id=528836238]
+offset_left = -56.576885
+offset_top = -90.41634
+offset_right = -6.576885
+offset_bottom = -40.416344
+texture_normal = ExtResource("4_j5wjh")
+
+[node name="TextureButton3" type="TextureButton" parent="Tree/Sprite2D" unique_id=2112134674]
+offset_left = 13.483926
+offset_top = -46.28373
+offset_right = 63.483925
+offset_bottom = 3.7162704
+texture_normal = ExtResource("5_vef74")
+
+[node name="TextureButton4" type="TextureButton" parent="Tree/Sprite2D" unique_id=1458617491]
+offset_left = -155.5517
+offset_top = 7.8411674
+offset_right = -55.551697
+offset_bottom = 107.84117
+texture_normal = ExtResource("6_hve3p")
+
+[connection signal="pressed" from="Tree/Sprite2D/TextureButton" to="Tree/Sprite2D" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Tree/Sprite2D/TextureButton" to="Tree/Sprite2D/TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="Tree/Sprite2D/TextureButton2" to="Tree/Sprite2D" method="_on_texture_button_2_pressed"]

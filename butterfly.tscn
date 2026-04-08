@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://ch6ttr1djeh70"]
+
+[ext_resource type="Texture2D" uid="uid://dj33o0sgp86c2" path="res://easybranch.png" id="1_fn0p1"]
+[ext_resource type="Script" uid="uid://b012vynij6s21" path="res://butterfly.gd" id="2_hocdr"]
+[ext_resource type="Texture2D" uid="uid://bjej8roofjitp" path="res://home button enlarged.png" id="2_tstti"]
+
+[node name="Butterfly" type="Node2D" unique_id=1423873941]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=644392759]
+position = Vector2(577, 321)
+scale = Vector2(0.79129386, 0.91922003)
+texture = ExtResource("1_fn0p1")
+script = ExtResource("2_hocdr")
+
+[node name="TextureButton" type="TextureButton" parent="Sprite2D" unique_id=1669324254]
+offset_left = -712.7567
+offset_top = 176.23636
+offset_right = -612.7567
+offset_bottom = 276.23636
+scale = Vector2(3.0986607, 1.9058133)
+texture_normal = ExtResource("2_tstti")
+
+[connection signal="pressed" from="Sprite2D/TextureButton" to="Sprite2D" method="_on_texture_button_pressed"]

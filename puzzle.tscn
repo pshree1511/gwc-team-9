@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dinv38f2v2hgo"]
+
+[node name="Node2D" type="Node2D" unique_id=613840371]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1379315942]
+
+[node name="TextureButton" type="TextureButton" parent="Sprite2D" unique_id=1745288412]
+offset_right = 40.0
+offset_bottom = 40.0
