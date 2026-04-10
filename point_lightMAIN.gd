@@ -19,9 +19,9 @@ func _process(_delta: float) -> void:
 		tween.tween_property(self, "global_position", Vector2(0,0), 2)
 
 func fade():
-	await get_tree().create_timer(2).timeout
+	await get_tree().create_timer(1).timeout
 	var tween= get_tree().create_tween()
-	tween.tween_property(self, "energy", 3, 1.6)
+	tween.tween_property(self, "energy", 3, 1.3)
 	
 func fade2():
 	await get_tree().create_timer(2).timeout
@@ -34,7 +34,7 @@ func off():
 
 func kindaoff(random):
 	var tween= get_tree().create_tween()
-	tween.tween_property(self, "energy", 2.3, random)
+	tween.tween_property(self, "energy", 2, random)
 	
 func blink():
 	rng.randomize()
