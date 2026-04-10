@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://cjd5yc4r2umcv"]
+
+[ext_resource type="Texture2D" uid="uid://c0pkg5y1mjkgh" path="res://pixil-frame-0.png" id="1_0hol4"]
+[ext_resource type="Script" uid="uid://bw8fcfw1exeny" path="res://monster.gd" id="2_kdubu"]
+[ext_resource type="Texture2D" uid="uid://28oxog5a732s" path="res://pixil-frame-0 (1).png" id="2_q6r6c"]
+[ext_resource type="PackedScene" uid="uid://dcrefh5d2k5lm" path="res://Fireball.tscn" id="3_d21ai"]
+[ext_resource type="Script" uid="uid://og5m31rliwa3" path="res://sprite_2d.gd" id="3_kdubu"]
+[ext_resource type="Texture2D" uid="uid://cbr4xrwfg08lx" path="res://pixil-frame-0 (2).png" id="4_d21ai"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0hol4"]
+size = Vector2(89.552246, 221.8182)
+
+[node name="Node2D" type="Node2D" unique_id=1653270205]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=459716871]
+position = Vector2(417.50003, 323.50003)
+scale = Vector2(8.289999, 6.4500003)
+texture = ExtResource("1_0hol4")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Background" unique_id=682174058]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/StaticBody2D" unique_id=857139719]
+position = Vector2(2.9824562, 33.798973)
+polygon = PackedVector2Array(-52.982456, 6.201027, -49.982456, 5.201027, -41.982456, 4.201027, -24.982456, 3.201027, -17.982456, 2.201027, -5.982456, 1.2010269, 1.0175438, 0.20102692, 7.017544, -0.7989731, 13.017544, -1.7989731, 16.017544, -2.798973, 18.017544, -3.798973, 22.017544, -4.798973, 23.017544, -5.798973, 27.017544, -6.798973, 33.017544, -7.798973, 35.017544, -8.798973, 37.017544, -9.798973, 39.017544, -10.798973, 39.017544, -7.798973, 38.017544, -5.798973, 37.017544, -3.798973, 36.017544, -1.7989731, 34.017544, 1.2010269, 32.017544, 3.201027, 30.017544, 4.201027, 29.017544, 6.201027, 28.017544, 7.201027, 27.017544, 9.201027, 26.017544, 10.201027, 25.017544, 12.201027, 24.017544, 14.201027, 24.017544, 14.201027, 23.017544, 16.201027, -52.982456, 16.201027)
+
+[node name="Monster" type="Node2D" parent="." unique_id=1665186361]
+position = Vector2(70, 1)
+script = ExtResource("2_kdubu")
+fireball_scene = ExtResource("3_d21ai")
+
+[node name="Sprite2D" type="Sprite2D" parent="Monster" unique_id=934348464]
+position = Vector2(528, 341)
+scale = Vector2(6.16, 6.5249996)
+texture = ExtResource("2_q6r6c")
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=1731755561 groups=["player"]]
+position = Vector2(124, 133)
+scale = Vector2(0.67, 0.66)
+script = ExtResource("3_kdubu")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1377093131]
+position = Vector2(195.52238, 157.57578)
+scale = Vector2(7.2910447, 7.651515)
+texture = ExtResource("4_d21ai")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1138917703]
+position = Vector2(5.970154, 207.27269)
+shape = SubResource("RectangleShape2D_0hol4")
