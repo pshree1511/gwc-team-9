@@ -22,6 +22,10 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 
 globals="*uid://bmc687un3wqsf"
 
+[display]
+
+window/size/transparent=true
+
 [input]
 
 code_book={

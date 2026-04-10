@@ -96,8 +96,8 @@ shape = SubResource("CircleShape2D_776f0")
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=1248998413]
 position = Vector2(2.173913, -2.1739135)
 scale = Vector2(0.28306156, 0.28306156)
-color = Color(5.9371605, 0.636039, 0, 1)
-energy = 1.24
+color = Color(5.9370003, 1.536654, 1.4509951, 1)
+energy = 8.14
 texture = SubResource("GradientTexture2D_8xspk")
 texture_scale = 0.9
 script = SubResource("GDScript_irldl")

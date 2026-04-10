@@ -21,7 +21,7 @@ func _process(_delta: float) -> void:
 func fade():
 	await get_tree().create_timer(2).timeout
 	var tween= get_tree().create_tween()
-	tween.tween_property(self, "energy", 3, 2)
+	tween.tween_property(self, "energy", 3, 1.6)
 	
 func fade2():
 	await get_tree().create_timer(2).timeout
