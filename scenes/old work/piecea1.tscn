@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://b4hghtxrjs8a6"]
+
+[ext_resource type="Texture2D" uid="uid://d2mp1cukirr2i" path="res://scenes/old work/godotWaves.jpg" id="1_k0onq"]
+[ext_resource type="Script" uid="uid://b5owgafgddc86" path="res://scenes/old work/piece2.gd" id="2_weusb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ui8xi"]
+size = Vector2(56.5, 48)
+
+[node name="piecea1" type="Node2D" unique_id=172336443]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1396258013]
+position = Vector2(311, 268)
+scale = Vector2(0.22332016, 0.23366834)
+texture = ExtResource("1_k0onq")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1483604531]
+script = ExtResource("2_weusb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1020271630]
+position = Vector2(308, 268)
+shape = SubResource("RectangleShape2D_ui8xi")
+
+[connection signal="area_entered" from="Area2D" to="Area2D" method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="Area2D" method="_on_area_2d_area_exited"]
+[connection signal="mouse_entered" from="Area2D" to="Area2D" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="Area2D" method="_on_area_2d_mouse_exited"]

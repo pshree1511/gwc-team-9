@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cfvcnnkl3gdex"]
+
+[ext_resource type="Texture2D" uid="uid://dvf2xt77020tr" path="res://scenes/old work/godotEar.png" id="1_ciu0g"]
+[ext_resource type="Script" uid="uid://3u2g8oxqquc5" path="res://scenes/old work/area_2d.gd" id="2_46p10"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8isyc"]
+size = Vector2(62.5, 66.5)
+
+[node name="piecea3" type="Node2D" unique_id=1823575687]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1063222169]
+position = Vector2(525.00006, 427)
+scale = Vector2(0.2627777, 0.27722257)
+texture = ExtResource("1_ciu0g")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1314049826]
+script = ExtResource("2_46p10")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=761253633]
+position = Vector2(523, 425)
+shape = SubResource("RectangleShape2D_8isyc")
+
+[connection signal="mouse_entered" from="Area2D" to="Area2D" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="Area2D" method="_on_area_2d_mouse_exited"]

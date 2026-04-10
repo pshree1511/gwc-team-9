@@ -3,16 +3,16 @@
 [ext_resource type="Texture2D" uid="uid://difg7xd1asyvf" path="res://fairyGodot.webp" id="1_qs0wo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qs0wo"]
-size = Vector2(32, 37)
+size = Vector2(85, 102)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1419204728]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1114937034]
 texture_filter = 1
-position = Vector2(46.666664, 54.000015)
-scale = Vector2(0.053612597, 0.05297172)
+position = Vector2(70.19824, 86.02193)
+scale = Vector2(0.10163622, 0.118322566)
 texture = ExtResource("1_qs0wo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1383163265]
-position = Vector2(45, 55.5)
+position = Vector2(71.5, 88)
 shape = SubResource("RectangleShape2D_qs0wo")

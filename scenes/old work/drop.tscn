@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://660oeyqnawwd"]
+
+[ext_resource type="Script" uid="uid://do8xhvm6ru8j2" path="res://drop.gd" id="1_7e686"]
+[ext_resource type="Script" uid="uid://dqnlh6eynynay" path="res://scenes/drop blocks/block_a_1.gd" id="2_8i0xm"]
+[ext_resource type="Script" uid="uid://c1agum7lspqgc" path="res://scenes/drop blocks/block_a_2.gd" id="3_7e686"]
+[ext_resource type="Script" uid="uid://c6sweublk524" path="res://scenes/drop blocks/block_a_3.gd" id="4_cxi55"]
+[ext_resource type="Script" uid="uid://nehm0g4ukeqn" path="res://scenes/drop blocks/block_b_1.gd" id="5_4x30w"]
+[ext_resource type="Script" uid="uid://dh4vcl3w5oun6" path="res://scenes/drop blocks/block_b_2.gd" id="6_cq2qt"]
+[ext_resource type="Script" uid="uid://ywtp1lw8ghjk" path="res://scenes/drop blocks/block_b_3.gd" id="7_0aqn4"]
+[ext_resource type="Script" uid="uid://b4kmlnjwwo70s" path="res://scenes/drop blocks/block_c_1.gd" id="8_r7fwd"]
+[ext_resource type="Script" uid="uid://bpj8tnpf750n5" path="res://scenes/drop blocks/block_c_2.gd" id="9_p8wcw"]
+[ext_resource type="Script" uid="uid://di7wyvmxsr6yt" path="res://scenes/drop blocks/block_c_3.gd" id="10_a2pxq"]
+
+[node name="Area2D" type="Area2D" unique_id=1954634107]
+script = ExtResource("1_7e686")
+
+[node name="block a1" type="Area2D" parent="." unique_id=39916992 groups=["droppable"]]
+script = ExtResource("2_8i0xm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block a1" unique_id=1278270037]
+
+[node name="ColorRect" type="ColorRect" parent="block a1" unique_id=170525487]
+offset_left = 400.0
+offset_top = 225.0
+offset_right = 460.0
+offset_bottom = 285.0
+color = Color(0.30588236, 0.8039216, 0.1764706, 0.8392157)
+
+[node name="block a2" type="Area2D" parent="." unique_id=1892908996]
+script = ExtResource("3_7e686")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block a2" unique_id=251975586]
+
+[node name="ColorRect" type="ColorRect" parent="block a2" unique_id=1098974535]
+offset_left = 460.0
+offset_top = 225.0
+offset_right = 520.0
+offset_bottom = 285.0
+color = Color(0.30588236, 0.8039216, 0.1764706, 0.8392157)
+
+[node name="block a3" type="Area2D" parent="." unique_id=2005358961]
+script = ExtResource("4_cxi55")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block a3" unique_id=1321407210]
+
+[node name="ColorRect" type="ColorRect" parent="block a3" unique_id=227711338]
+offset_left = 520.0
+offset_top = 225.0
+offset_right = 580.0
+offset_bottom = 285.0
+color = Color(0.30588236, 0.8039216, 0.1764706, 0.8392157)
+
+[node name="block b1" type="Area2D" parent="." unique_id=1467477366]
+script = ExtResource("5_4x30w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block b1" unique_id=362495199]
+
+[node name="ColorRect" type="ColorRect" parent="block b1" unique_id=1373848857]
+offset_left = 400.0
+offset_top = 285.0
+offset_right = 460.0
+offset_bottom = 345.0
+color = Color(0.30588236, 0.8039216, 0.1764706, 0.8392157)
+
+[node name="block b2" type="Area2D" parent="." unique_id=372165570]
+script = ExtResource("6_cq2qt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block b2" unique_id=1786917581]
+
+[node name="ColorRect" type="ColorRect" parent="block b2" unique_id=1311109549]
+offset_left = 460.0
+offset_top = 285.0
+offset_right = 520.0
+offset_bottom = 345.0
+color = Color(0.30588236, 0.8039216, 0.1764706, 0.8392157)
+
+[node name="block b3" type="Area2D" parent="." unique_id=2007084154]
+script = ExtResource("7_0aqn4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block b3" unique_id=368844099]
+
+[node name="ColorRect" type="ColorRect" parent="block b3" unique_id=1960369026]
+offset_left = 520.0
+offset_top = 285.0
+offset_right = 580.0
+offset_bottom = 345.0
+color = Color(0.30588236, 0.8039216, 0.1764706, 0.8392157)
+
+[node name="block c1" type="Area2D" parent="." unique_id=1006284094]
+script = ExtResource("8_r7fwd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block c1" unique_id=1448866410]
+
+[node name="ColorRect" type="ColorRect" parent="block c1" unique_id=158325098]
+offset_left = 400.0
+offset_top = 345.0
+offset_right = 460.0
+offset_bottom = 405.0
+color = Color(0.30588236, 0.8039216, 0.1764706, 0.8392157)
+
+[node name="block c2" type="Area2D" parent="." unique_id=8452443]
+script = ExtResource("9_p8wcw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block c2" unique_id=1018659406]
+
+[node name="ColorRect" type="ColorRect" parent="block c2" unique_id=624438334]
+offset_left = 460.0
+offset_top = 345.0
+offset_right = 520.0
+offset_bottom = 405.0
+color = Color(0.30588236, 0.8039216, 0.1764706, 0.8392157)
+
+[node name="block c3" type="Area2D" parent="." unique_id=1053556723]
+script = ExtResource("10_a2pxq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block c3" unique_id=815364254]
+
+[node name="ColorRect" type="ColorRect" parent="block c3" unique_id=1498441136]
+offset_left = 520.0
+offset_top = 345.0
+offset_right = 580.0
+offset_bottom = 405.0
+color = Color(0.30588236, 0.8039216, 0.1764706, 0.8392157)

@@ -11,8 +11,29 @@ config_version=5
 [application]
 
 config/name="GWC Group 9"
+run/main_scene="uid://dt1qc80oxfrpu"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Global="uid://f4rq6ix7i8o8"
+GameManager="uid://bmljgj7880inf"
+g="*uid://cmta3dtobklcw"
+
+[display]
+
+window/size/viewport_width=1024
+window/size/viewport_height=1024
+window/stretch/mode="canvas_items"
+
+[input]
+
+click={
+"deadzone": 0.2,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
+]
+}
 
 [physics]
 
@@ -20,4 +41,6 @@ config/icon="res://icon.svg"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
+environment/defaults/default_clear_color=Color(0.033464897, 0.20117876, 0.17377317, 1)

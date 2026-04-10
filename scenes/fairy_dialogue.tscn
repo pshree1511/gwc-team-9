@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b362nmldq8b1a"]
+
+[ext_resource type="Texture2D" uid="uid://by1tifiu20osv" path="res://fairyDialogue (2).png" id="1_vmp0k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ksxyv"]
+size = Vector2(283, 158)
+
+[node name="fairyDialogue" type="CharacterBody2D" unique_id=1760281749]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1952877272]
+position = Vector2(386.25, 177.375)
+scale = Vector2(0.06011284, 0.06807004)
+texture = ExtResource("1_vmp0k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=22348612]
+position = Vector2(366, 152)
+shape = SubResource("RectangleShape2D_ksxyv")

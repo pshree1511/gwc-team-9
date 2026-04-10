@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cqeysaia88sro"]
+
+[ext_resource type="Texture2D" uid="uid://63a44f4daywl" path="res://scenes/old work/puzzlePiece1.jpg" id="1_u72j8"]
+[ext_resource type="Script" uid="uid://cjbvj8owkjlxi" path="res://scenes/old work/object.gd" id="2_1x4re"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gyllu"]
+size = Vector2(40.50003, 41.500015)
+
+[node name="drag" type="Node2D" unique_id=1924423263]
+
+[node name="spriteA1" type="Sprite2D" parent="." unique_id=1745729658]
+texture_filter = 1
+position = Vector2(214.8125, 138.59688)
+scale = Vector2(0.17944445, 0.19024995)
+texture = ExtResource("1_u72j8")
+
+[node name="areaA1" type="Area2D" parent="." unique_id=1435179415]
+position = Vector2(1.5258789e-05, 7.6293945e-06)
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("2_1x4re")
+
+[node name="CollisionShapeA1" type="CollisionShape2D" parent="areaA1" unique_id=261082436]
+position = Vector2(214.74995, 138.24997)
+scale = Vector2(0.9999998, 0.9999998)
+shape = SubResource("RectangleShape2D_gyllu")
+
+[connection signal="mouse_entered" from="areaA1" to="areaA1" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="areaA1" to="areaA1" method="_on_area_2d_mouse_exited"]
