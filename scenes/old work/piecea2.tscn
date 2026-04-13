@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://b4i0f2lelfblf"]
+
+[ext_resource type="Texture2D" uid="uid://db5cpif8lxg0b" path="res://scenes/old work/godotKnot.jpg" id="1_rhivo"]
+[ext_resource type="Script" uid="uid://bv6o8aarmvfwf" path="res://scenes/old work/piecea2.gd" id="2_jjops"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ui8xi"]
+size = Vector2(44, 38)
+
+[node name="piece a2" type="Node2D" unique_id=793907227]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=537057526]
+position = Vector2(114.25, 71.25)
+scale = Vector2(0.18444444, 0.17555556)
+texture = ExtResource("1_rhivo")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=567086258]
+script = ExtResource("2_jjops")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=546121626]
+position = Vector2(113, 70)
+shape = SubResource("RectangleShape2D_ui8xi")
+
+[connection signal="mouse_entered" from="Area2D" to="Area2D" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="Area2D" method="_on_area_2d_mouse_exited"]

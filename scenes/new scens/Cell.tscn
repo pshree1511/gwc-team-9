@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://v8fis2ex501x"]
+
+[ext_resource type="Script" uid="uid://0dtbyc3554g1" path="res://scripts/cell.gd" id="1_a4s71"]
+
+[sub_resource type="Gradient" id="Gradient_j03uv"]
+offsets = PackedFloat32Array(0.98417723, 0.9936709, 0.9939759, 0.9968355, 1)
+colors = PackedColorArray(0.106033035, 0.20627418, 0.24797302, 1, 0.07926256, 0.19660008, 0.14141312, 1, 0.07926256, 0.19660008, 0.14141312, 1, 0, 0, 0, 1, 0.09897428, 0.22978818, 0.123241805, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nyri2"]
+gradient = SubResource("Gradient_j03uv")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gogn5"]
+
+[node name="Cell" type="Area2D" unique_id=1222261800 groups=["cell"]]
+script = ExtResource("1_a4s71")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1573550909]
+scale = Vector2(1, 256)
+texture = SubResource("GradientTexture1D_nyri2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=47198134]
+shape = SubResource("RectangleShape2D_gogn5")

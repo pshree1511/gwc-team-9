@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ua3ogns65v1y"]
+
+[ext_resource type="Texture2D" uid="uid://dlk0n280vfcc2" path="res://vultureDialogue-removebg-preview.png" id="1_ppmgq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x5hog"]
+size = Vector2(516, 197)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1883844755]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1918254736]
+position = Vector2(471.75, 846.25)
+scale = Vector2(1.0120226, 0.7606232)
+texture = ExtResource("1_ppmgq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1155921122]
+position = Vector2(452, 846.5)
+shape = SubResource("RectangleShape2D_x5hog")
