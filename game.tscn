@@ -5,7 +5,12 @@
 [ext_resource type="Texture2D" uid="uid://dgf5q2fp1ro7i" path="res://pixil-frame-0 (2).png" id="3_fc0e3"]
 [ext_resource type="Texture2D" uid="uid://cn4honfvnwari" path="res://pixil-frame-0 (5).png" id="4_j5wjh"]
 [ext_resource type="Texture2D" uid="uid://bnfauayv71bhb" path="res://pixil-frame-0 (4).png" id="5_vef74"]
-[ext_resource type="Texture2D" uid="uid://c1hmpiayrsy4h" path="res://pixilart-drawing (3).png" id="6_hve3p"]
+[ext_resource type="Texture2D" uid="uid://c6rr6g6r5a0an" path="res://butterfly-card-pixilart (1).png" id="6_mfdv2"]
+[ext_resource type="Texture2D" uid="uid://dld0elatr12f0" path="res://butterfly-card-2-pixilart (1).png" id="7_iotsf"]
+[ext_resource type="Texture2D" uid="uid://cktdmgw8d88ig" path="res://boss-pixilart (1).png" id="8_vef74"]
+[ext_resource type="Texture2D" uid="uid://c5v6dqu07kjje" path="res://boss-pixilart (2).png" id="9_hve3p"]
+[ext_resource type="Texture2D" uid="uid://c4ov3ux8s6xtt" path="res://butterfly-card-2-pixilart (2).png" id="10_lc2xo"]
+[ext_resource type="Texture2D" uid="uid://by7tghn6gi3pa" path="res://puzzle2.png" id="11_215e1"]
 
 [node name="Game" type="Node2D" unique_id=1383127109]
 
@@ -45,8 +50,29 @@ offset_left = -155.5517
 offset_top = 7.8411674
 offset_right = -55.551697
 offset_bottom = 107.84117
-texture_normal = ExtResource("6_hve3p")
+texture_normal = ExtResource("6_mfdv2")
+texture_hover = ExtResource("7_iotsf")
+
+[node name="TextureButton5" type="TextureButton" parent="Tree/Sprite2D" unique_id=1524830324]
+offset_left = -12.927889
+offset_top = 7.5636063
+offset_right = 87.07211
+offset_bottom = 107.56361
+texture_normal = ExtResource("8_vef74")
+texture_hover = ExtResource("9_hve3p")
+
+[node name="TextureButton6" type="TextureButton" parent="Tree/Sprite2D" unique_id=1101902340]
+offset_left = 71.3119
+offset_top = 8.396297
+offset_right = 171.31189
+offset_bottom = 108.3963
+texture_normal = ExtResource("10_lc2xo")
+texture_hover = ExtResource("11_215e1")
 
 [connection signal="pressed" from="Tree/Sprite2D/TextureButton" to="Tree/Sprite2D" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Tree/Sprite2D/TextureButton" to="Tree/Sprite2D/TextureButton" method="_on_pressed"]
 [connection signal="pressed" from="Tree/Sprite2D/TextureButton2" to="Tree/Sprite2D" method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="Tree/Sprite2D/TextureButton3" to="Tree/Sprite2D" method="_on_texture_button_3_pressed"]
+[connection signal="pressed" from="Tree/Sprite2D/TextureButton4" to="Tree/Sprite2D" method="_on_texture_button_4_pressed"]
+[connection signal="pressed" from="Tree/Sprite2D/TextureButton5" to="Tree/Sprite2D" method="_on_texture_button_5_pressed"]
+[connection signal="pressed" from="Tree/Sprite2D/TextureButton6" to="Tree/Sprite2D" method="_on_texture_button_6_pressed"]
