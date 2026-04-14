@@ -9,6 +9,8 @@ signal text_edited(solved)
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$Button.pressed.connect(change)
+	
+	%Button.visible = Globals.solved
 
 
 func change():
@@ -23,8 +25,11 @@ func _on_line_edit_2_text_submitted(new_text: String) -> void:
 	password = new_text
 	print(password)
 	if(password==key):
-		solved = true
-		print(solved)
+		Globals.solved = true
+		
+		%Button.show()
+		
+		print(Globals.solved)
 		Line.clear()
 		change()
 		%Button.hide()
