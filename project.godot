@@ -8,7 +8,6 @@
 
 config_version=5
 
-
 [animation]
 
 compatibility/default_parent_skeleton_in_mesh_instance_3d=true
@@ -17,7 +16,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="GWC_team_9"
 run/main_scene="uid://djjo65am8fqb4"
-config/features=PackedStringArray("4.6", "Forward Plus")
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -40,10 +39,6 @@ click={
 ]
 }
 
-
-
-
-
 [physics]
 
 3d/physics_engine="Jolt Physics"
@@ -52,7 +47,4 @@ click={
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
-
 environment/defaults/default_clear_color=Color(0.033464897, 0.20117876, 0.17377317, 1)
-
-

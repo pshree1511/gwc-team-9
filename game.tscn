@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://djjo65am8fqb4"]
+[gd_scene load_steps=12 format=3 uid="uid://djjo65am8fqb4"]
 
-[ext_resource type="Script" uid="uid://ceuhcri1h6wp3" path="res://sprite_2d.gd" id="2_ryrav"]
-[ext_resource type="Texture2D" uid="uid://ba0hu6s4c3auc" path="res://pixil-frame-0 (3).png" id="3_eow3j"]
-[ext_resource type="Texture2D" uid="uid://dgf5q2fp1ro7i" path="res://pixil-frame-0 (2).png" id="3_fc0e3"]
+[ext_resource type="Script" path="res://sprite_2d.gd" id="2_ryrav"]
+[ext_resource type="Texture2D" uid="uid://c87tocswuuees" path="res://maintree.png" id="3_eow3j"]
+[ext_resource type="Texture2D" uid="uid://b7pfqif0jmp27" path="res://greenquestion.png" id="3_fc0e3"]
 [ext_resource type="Texture2D" uid="uid://cn4honfvnwari" path="res://pixil-frame-0 (5).png" id="4_j5wjh"]
 [ext_resource type="Texture2D" uid="uid://bnfauayv71bhb" path="res://pixil-frame-0 (4).png" id="5_vef74"]
 [ext_resource type="Texture2D" uid="uid://c6rr6g6r5a0an" path="res://butterfly-card-pixilart (1).png" id="6_mfdv2"]
@@ -12,40 +12,40 @@
 [ext_resource type="Texture2D" uid="uid://c4ov3ux8s6xtt" path="res://butterfly-card-2-pixilart (2).png" id="10_lc2xo"]
 [ext_resource type="Texture2D" uid="uid://by7tghn6gi3pa" path="res://puzzle2.png" id="11_215e1"]
 
-[node name="Game" type="Node2D" unique_id=1383127109]
+[node name="Game" type="Node2D"]
 
-[node name="Node2D" type="Node2D" parent="." unique_id=831785853]
+[node name="Node2D" type="Node2D" parent="."]
 
-[node name="Tree" type="Node2D" parent="." unique_id=2029284865]
+[node name="Tree" type="Node2D" parent="."]
 
-[node name="Sprite2D" type="Sprite2D" parent="Tree" unique_id=240758072]
+[node name="Sprite2D" type="Sprite2D" parent="Tree"]
 position = Vector2(574.5, 322.75)
 scale = Vector2(3.596875, 3.602778)
-texture = ExtResource("3_fc0e3")
+texture = ExtResource("3_eow3j")
 script = ExtResource("2_ryrav")
 
-[node name="TextureButton" type="TextureButton" parent="Tree/Sprite2D" unique_id=1299217192]
+[node name="TextureButton" type="TextureButton" parent="Tree/Sprite2D"]
 offset_left = -88.8271
 offset_top = -27.96453
 offset_right = -38.827103
 offset_bottom = 22.03547
-texture_normal = ExtResource("3_eow3j")
+texture_normal = ExtResource("3_fc0e3")
 
-[node name="TextureButton2" type="TextureButton" parent="Tree/Sprite2D" unique_id=528836238]
+[node name="TextureButton2" type="TextureButton" parent="Tree/Sprite2D"]
 offset_left = -56.576885
 offset_top = -90.41634
 offset_right = -6.576885
 offset_bottom = -40.416344
 texture_normal = ExtResource("4_j5wjh")
 
-[node name="TextureButton3" type="TextureButton" parent="Tree/Sprite2D" unique_id=2112134674]
+[node name="TextureButton3" type="TextureButton" parent="Tree/Sprite2D"]
 offset_left = 13.483926
 offset_top = -46.28373
 offset_right = 63.483925
 offset_bottom = 3.7162704
 texture_normal = ExtResource("5_vef74")
 
-[node name="TextureButton4" type="TextureButton" parent="Tree/Sprite2D" unique_id=1458617491]
+[node name="TextureButton4" type="TextureButton" parent="Tree/Sprite2D"]
 offset_left = -155.5517
 offset_top = 7.8411674
 offset_right = -55.551697
@@ -53,7 +53,7 @@ offset_bottom = 107.84117
 texture_normal = ExtResource("6_mfdv2")
 texture_hover = ExtResource("7_iotsf")
 
-[node name="TextureButton5" type="TextureButton" parent="Tree/Sprite2D" unique_id=1524830324]
+[node name="TextureButton5" type="TextureButton" parent="Tree/Sprite2D"]
 offset_left = -12.927889
 offset_top = 7.5636063
 offset_right = 87.07211
@@ -61,7 +61,7 @@ offset_bottom = 107.56361
 texture_normal = ExtResource("8_vef74")
 texture_hover = ExtResource("9_hve3p")
 
-[node name="TextureButton6" type="TextureButton" parent="Tree/Sprite2D" unique_id=1101902340]
+[node name="TextureButton6" type="TextureButton" parent="Tree/Sprite2D"]
 offset_left = 71.3119
 offset_top = 8.396297
 offset_right = 171.31189
