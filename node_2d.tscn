@@ -48,7 +48,4 @@ texture = ExtResource("6_kdubu")
 position = Vector2(5.970154, 207.27269)
 shape = SubResource("RectangleShape2D_0hol4")
 
-[gd_scene format=3 uid="uid://b5ppxg8bfiqj4"]
-
-[node name="Node2D" type="Node2D" unique_id=1240280583]
 

@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dgm3efvn66dr5"]
+[gd_scene load_steps=0 format=3 uid="uid://dgm3efvn66dr5"]
 
 [ext_resource type="Script" uid="uid://bwc61imgav6tg" path="res://button.gd" id="1_vng66"]
 [ext_resource type="Texture2D" uid="uid://cnegosgf8k2d2" path="res://assets/pixil-frame-0 (4).png" id="2_ptcjm"]

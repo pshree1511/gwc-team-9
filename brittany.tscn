@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://be7p4h7fa2hqf"]
+[gd_scene load_steps=0 format=3 uid="uid://be7p4h7fa2hqf"]
 
 [ext_resource type="PackedScene" uid="uid://cu810qiak6wea" path="res://scnes/characters/butterfly.tscn" id="1_0e48y"]
 [ext_resource type="Script" uid="uid://bj5ym1w8a0t61" path="res://scripts/brittany.gd" id="1_naoyu"]
