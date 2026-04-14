@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dj33o0sgp86c2" path="res://easybranch.png" id="1_fn0p1"]
 [ext_resource type="Script" uid="uid://b012vynij6s21" path="res://butterfly.gd" id="2_hocdr"]
 [ext_resource type="Texture2D" uid="uid://bjej8roofjitp" path="res://home button enlarged.png" id="2_tstti"]
+[ext_resource type="Texture2D" uid="uid://3uroo8yx1a0r" path="res://start-button-enlarged-pixilart.png" id="4_hocdr"]
 
 [node name="Butterfly" type="Node2D" unique_id=1423873941]
 
@@ -20,4 +21,13 @@ offset_bottom = 276.23636
 scale = Vector2(3.0986607, 1.9058133)
 texture_normal = ExtResource("2_tstti")
 
+[node name="TextureButton2" type="TextureButton" parent="Sprite2D" unique_id=1216100623]
+offset_left = -697.5917
+offset_top = -291.5515
+offset_right = -597.5917
+offset_bottom = -191.55151
+scale = Vector2(3.0979588, 2.9999201)
+texture_normal = ExtResource("4_hocdr")
+
 [connection signal="pressed" from="Sprite2D/TextureButton" to="Sprite2D" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Sprite2D/TextureButton2" to="Sprite2D" method="_on_texture_button_2_pressed"]

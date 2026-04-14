@@ -22,3 +22,7 @@ func _on_texture_button_5_pressed() -> void:
 
 func _on_texture_button_6_pressed() -> void:
 	get_tree().change_scene_to_file("res://puzzle.tscn")
+
+
+func _on_texture_button_7_pressed() -> void:
+	get_tree().change_scene_to_file("res://brittany.tscn")
