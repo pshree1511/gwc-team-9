@@ -78,11 +78,3 @@ texture_hover = ExtResource("11_215e1")
 [connection signal="pressed" from="Tree/Sprite2D/TextureButton5" to="Tree/Sprite2D" method="_on_texture_button_5_pressed"]
 [connection signal="pressed" from="Tree/Sprite2D/TextureButton6" to="Tree/Sprite2D" method="_on_texture_button_6_pressed"]
 
-[gd_scene format=3 uid="uid://cmuu7db6styp5"]
-
-[ext_resource type="PackedScene" uid="uid://cmuu7db6styp5" path="res://game.tscn" id="1_842gc"]
-
-[node name="Node2D" type="Node2D" unique_id=1671629521]
-
-[node name="Node2D" parent="." unique_id=1610711930 instance=ExtResource("1_842gc")]
-
