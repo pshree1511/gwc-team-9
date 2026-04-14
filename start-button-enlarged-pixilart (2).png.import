@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3uroo8yx1a0r"
-path="res://.godot/imported/start-button-enlarged-pixilart.png-f60a73f02332551ccb962d377e9c43b2.ctex"
+uid="uid://bh88qy12xggy6"
+path="res://.godot/imported/start-button-enlarged-pixilart (2).png-355ce97ad067176977d9a6311e1ef791.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://start-button-enlarged-pixilart.png"
-dest_files=["res://.godot/imported/start-button-enlarged-pixilart.png-f60a73f02332551ccb962d377e9c43b2.ctex"]
+source_file="res://start-button-enlarged-pixilart (2).png"
+dest_files=["res://.godot/imported/start-button-enlarged-pixilart (2).png-355ce97ad067176977d9a6311e1ef791.ctex"]
 
 [params]
 
