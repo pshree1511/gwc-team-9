@@ -8,7 +8,7 @@ func _ready() -> void:
 
 func _on_child_text_edited(solved2):
 	if(solved2==true):
-		globals.solved=true
+		Globals.solved=true
 		print("WORKS")
 		$Node2D.show()
 		await get_tree().create_timer(3).timeout

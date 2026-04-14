@@ -22,7 +22,7 @@ func lightoff():
 	
 func flash():
 	rng.randomize()
-	while !globals.solved:
+	while not Globals.solved:
 		var random = rng.randf_range(0.0,0.5)
 		await get_tree().create_timer(random).timeout
 		lighton()

@@ -12,7 +12,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	if InputEventMouseMotion && globals.solved==false:
+	if InputEventMouseMotion && Globals.solved==false:
 		global_position = get_global_mouse_position()
 	else:
 		var tween= get_tree().create_tween()
@@ -39,12 +39,12 @@ func kindaoff(random):
 func blink():
 	rng.randomize()
 	self.energy=3
-	while !globals.solved:
+	while not Globals.solved:
 		var random = rng.randf_range(0.5,1.0)
 		await get_tree().create_timer(1).timeout
 		var tween= get_tree().create_tween()
 		tween.tween_property(self, "energy", 3, random)
 		await get_tree().create_timer(1).timeout
 		kindaoff(random)
-	if(globals.solved):
+	if(Globals.solved):
 		fade2()

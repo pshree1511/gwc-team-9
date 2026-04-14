@@ -3,7 +3,7 @@ extends Control
 @onready var Line =%LineEdit2
 var password
 var key = "ignis"
-var solved = globals.solved
+var solved = Globals.solved
 
 signal text_edited(solved)
 # Called when the node enters the scene tree for the first time.

@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cl7suw36y0sg1"]
+[gd_scene load_steps=7 format=3 uid="uid://cl7suw36y0sg1"]
 
 [ext_resource type="Texture2D" uid="uid://dcfvx85w3uux6" path="res://assets/petal3-pixilart.png" id="1_bsl18"]
 [ext_resource type="Script" uid="uid://b3sviulnnptu2" path="res://scnes/characters/scripts/point_light_2d4.gd" id="2_ku1vq"]
@@ -27,21 +27,21 @@ fill = 1
 fill_from = Vector2(0.50652176, 0.47391304)
 fill_to = Vector2(0.67826086, 0.2)
 
-[node name="flower3" type="CharacterBody2D" unique_id=2032465407]
+[node name="flower3" type="CharacterBody2D"]
 scale = Vector2(0.94, 0.94)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=652754751]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(7, -8)
 scale = Vector2(0.64, 0.64)
 shape = SubResource("CircleShape2D_776f0")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1370634597]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 self_modulate = Color(0.5700211, 0.7953744, 1.0061888, 1)
 position = Vector2(6, -6)
 scale = Vector2(0.74, 0.74)
 sprite_frames = SubResource("SpriteFrames_rr8bf")
 
-[node name="PointLight2D" type="PointLight2D" parent="." unique_id=230826597]
+[node name="PointLight2D" type="PointLight2D" parent="."]
 position = Vector2(9.09091, -9.09091)
 scale = Vector2(0.38642198, 0.35260165)
 color = Color(5.9371605, 0.636039, 0, 1)

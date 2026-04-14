@@ -11,7 +11,7 @@ extends PointLight2D
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	await get_tree().create_timer(unitTime*delay).timeout
-	while !globals.solved:
+	while not Globals.solved:
 		await flashWord()
 		await get_tree().create_timer(unitTime*5).timeout
 
