@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://dgf5q2fp1ro7i"
+=======
+uid="uid://cbr4xrwfg08lx"
+>>>>>>> origin/boss
 path="res://.godot/imported/pixil-frame-0 (2).png-3518ea07d4b7b07323f6a64175fb6f0f.ctex"
 metadata={
 "vram_texture": false
