@@ -10,6 +10,7 @@
 #func _process(delta: float) -> void:
 	#pass
 extends Area2D
+var hit = false
 
 @export var speed := 400.0
 var direction := Vector2.ZERO
@@ -21,3 +22,5 @@ func _on_body_entered(body):
 	if body.is_in_group("player"):
 		print("Player hit!")
 		get_tree().paused = true
+		hit = true
+		

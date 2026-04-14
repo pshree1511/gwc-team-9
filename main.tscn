@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dt1qc80oxfrpu"]
+[gd_scene load_steps=7 format=3 uid="uid://dt1qc80oxfrpu"]
 
 [ext_resource type="Script" uid="uid://dmqwr3gc3oqvn" path="res://scripts/main.gd" id="1_kek77"]
 [ext_resource type="Texture2D" uid="uid://bjbhdb2myfoht" path="res://newgodotbackground.png" id="2_0xm2m"]
@@ -7,34 +7,34 @@
 [ext_resource type="PackedScene" uid="uid://b362nmldq8b1a" path="res://scenes/fairy_dialogue.tscn" id="5_lquwl"]
 [ext_resource type="PackedScene" uid="uid://ua3ogns65v1y" path="res://scenes/vultureDialogue.tscn" id="6_7mycd"]
 
-[node name="Main" type="Node2D" unique_id=412276257]
+[node name="Main" type="Node2D"]
 script = ExtResource("1_kek77")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=912008672]
+[node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 1507.0
 offset_bottom = 1028.0
 texture = ExtResource("2_0xm2m")
 
-[node name="VultureShell" type="CharacterBody2D" parent="TextureRect" unique_id=1276168575]
+[node name="VultureShell" type="CharacterBody2D" parent="TextureRect"]
 
-[node name="Vulture" parent="TextureRect/VultureShell" unique_id=451349671 instance=ExtResource("3_h2yge")]
+[node name="Vulture" parent="TextureRect/VultureShell" instance=ExtResource("3_h2yge")]
 position = Vector2(483, 765)
 
-[node name="FairyShell" type="CharacterBody2D" parent="TextureRect" unique_id=867330948]
+[node name="FairyShell" type="CharacterBody2D" parent="TextureRect"]
 
-[node name="Fairy" parent="TextureRect/FairyShell" unique_id=1419204728 instance=ExtResource("4_1bvp3")]
+[node name="Fairy" parent="TextureRect/FairyShell" instance=ExtResource("4_1bvp3")]
 position = Vector2(53, 24)
 
-[node name="FairyDialogueShell" type="CharacterBody2D" parent="TextureRect" unique_id=1058182132]
+[node name="FairyDialogueShell" type="CharacterBody2D" parent="TextureRect"]
 
-[node name="fairyDialogue" parent="TextureRect/FairyDialogueShell" unique_id=1760281749 instance=ExtResource("5_lquwl")]
+[node name="fairyDialogue" parent="TextureRect/FairyDialogueShell" instance=ExtResource("5_lquwl")]
 position = Vector2(-60, 12)
 
-[node name="VultureDialogueShell" type="CharacterBody2D" parent="TextureRect" unique_id=1644684599]
+[node name="VultureDialogueShell" type="CharacterBody2D" parent="TextureRect"]
 
-[node name="vultureDialogue" parent="TextureRect/VultureDialogueShell" unique_id=1883844755 instance=ExtResource("6_7mycd")]
+[node name="vultureDialogue" parent="TextureRect/VultureDialogueShell" instance=ExtResource("6_7mycd")]
 
-[node name="Cells" type="Node2D" parent="." unique_id=612007130]
+[node name="Cells" type="Node2D" parent="."]
 position = Vector2(375, 375)
 
-[node name="Pieces" type="Node2D" parent="." unique_id=2052670098]
+[node name="Pieces" type="Node2D" parent="."]

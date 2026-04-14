@@ -28,8 +28,8 @@ Globals="*res://globals.gd"
 
 [display]
 
-window/size/viewport_width=830
-window/size/viewport_height=650
+window/size/viewport_width=1024
+window/size/viewport_height=1024
 window/size/transparent=true
 window/stretch/mode="canvas_items"
 
