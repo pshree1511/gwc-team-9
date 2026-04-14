@@ -20,9 +20,6 @@ run/main_scene="uid://djjo65am8fqb4"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
-run/main_scene="uid://be7p4h7fa2hqf"
-config/features=PackedStringArray("4.6", "Forward Plus")
-
 [autoload]
 
 globals="*uid://bmc687un3wqsf"
@@ -39,12 +36,6 @@ code_book={
 ]
 }
 
-
-[autoload]
-
-Global="uid://f4rq6ix7i8o8"
-GameManager="uid://bmljgj7880inf"
-g="*uid://cmta3dtobklcw"
 
 [display]
 
