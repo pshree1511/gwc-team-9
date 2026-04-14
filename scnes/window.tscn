@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cryihyqi8a04e"]
+
+[ext_resource type="Script" uid="uid://3r4v5a72xp4u" path="res://scripts/window.gd" id="1_5phtf"]
+[ext_resource type="Texture2D" uid="uid://2d6g0rbehj00" path="res://scnes/characters/pixil-frame-0 (1).png" id="1_bag5m"]
+
+[node name="Window" type="Window" unique_id=864730816]
+oversampling_override = 1.0
+title = "Morse Code Book"
+initial_position = 1
+size = Vector2i(423, 443)
+borderless = true
+theme_override_colors/title_color = Color(0.996597, 0.95298344, 0.9575042, 1)
+theme_override_font_sizes/title_font_size = 22
+script = ExtResource("1_5phtf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=485044401]
+texture_filter = 2
+position = Vector2(212.57578, 220.9483)
+scale = Vector2(-0.697691, -0.5465354)
+texture = ExtResource("1_bag5m")
+flip_h = true
+flip_v = true
+
+[connection signal="close_requested" from="." to="." method="_on_close_requested"]

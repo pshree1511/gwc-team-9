@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://dgm3efvn66dr5"]
+
+[ext_resource type="Script" uid="uid://bwc61imgav6tg" path="res://button.gd" id="1_vng66"]
+[ext_resource type="Texture2D" uid="uid://cnegosgf8k2d2" path="res://assets/pixil-frame-0 (4).png" id="2_ptcjm"]
+
+[node name="Control" type="Control" unique_id=168445548]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_vng66")
+
+[node name="LineEdit2" type="LineEdit" parent="." unique_id=1647520245]
+unique_name_in_owner = true
+visible = false
+self_modulate = Color(0.84, 0.17639998, 0.18745983, 1)
+layout_mode = 0
+offset_left = 7.0
+offset_top = -11.0
+offset_right = 96.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 13
+
+[node name="Button" type="Button" parent="." unique_id=128800459]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 188.0
+offset_top = -18.0
+offset_right = 221.0
+offset_bottom = 16.0
+
+[node name="TextureRect" type="TextureRect" parent="Button" unique_id=19439851]
+self_modulate = Color(0.94334525, 0.41129252, 0.21781881, 1)
+layout_mode = 0
+offset_right = 34.0
+offset_bottom = 34.0
+texture = ExtResource("2_ptcjm")
+expand_mode = 1
+
+[connection signal="text_submitted" from="LineEdit2" to="." method="_on_line_edit_2_text_submitted"]

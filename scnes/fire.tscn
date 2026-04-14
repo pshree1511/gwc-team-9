@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://pksyhf8fiell"]
+
+[ext_resource type="Texture2D" uid="uid://dh2bymlhi4tlf" path="res://assets/fire/Group 4 - 1_8.png" id="1_ufhmj"]
+[ext_resource type="Texture2D" uid="uid://3avmftsbr8mp" path="res://assets/fire/Group 4 - 1_7.png" id="2_8ingl"]
+[ext_resource type="Texture2D" uid="uid://cn7esk4igljqh" path="res://assets/fire/Group 4 - 1_5.png" id="3_5jwmb"]
+[ext_resource type="Texture2D" uid="uid://c3jpugbf12oyp" path="res://assets/fire/Group 4 - 1_4.png" id="4_3k34q"]
+[ext_resource type="Texture2D" uid="uid://dwqg6xffjgh7x" path="res://assets/fire/Group 4 - 1_6.png" id="5_d6m6f"]
+[ext_resource type="Texture2D" uid="uid://bd275eke3qogp" path="res://assets/fire/Group 4 - 1_3.png" id="6_2r1xn"]
+[ext_resource type="Texture2D" uid="uid://da1yplbqry7i" path="res://assets/fire/Group 4 - 1_2.png" id="7_aomed"]
+[ext_resource type="Texture2D" uid="uid://dd6ktyn7pkg2m" path="res://assets/fire/Group 4 - 1_1.png" id="8_ey181"]
+[ext_resource type="Script" uid="uid://ble581upmt0xb" path="res://scnes/characters/scripts/firescript.gd" id="9_8ingl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gwkax"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ufhmj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8ingl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5jwmb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3k34q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_d6m6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2r1xn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_aomed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ey181")
+}],
+"loop": true,
+"name": &"burning",
+"speed": 5.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_24d5r"]
+offsets = PackedFloat32Array(0.37951806, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_8ingl"]
+gradient = SubResource("Gradient_24d5r")
+fill = 1
+fill_from = Vector2(0.54130435, 0.5195652)
+fill_to = Vector2(0.8565217, 0.2347826)
+
+[node name="Node2D" type="Node2D" unique_id=1489795083]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1841383432]
+position = Vector2(7.6293945e-06, -22.999992)
+scale = Vector2(4.109375, 3.4479167)
+sprite_frames = SubResource("SpriteFrames_gwkax")
+animation = &"burning"
+frame_progress = 0.4517931
+script = ExtResource("9_8ingl")
+
+[node name="PointLight2D3" type="PointLight2D" parent="AnimatedSprite2D" unique_id=1093234710]
+position = Vector2(-1.4305115e-06, 9.861024)
+scale = Vector2(0.6463051, 0.9959413)
+color = Color(0.29979214, 0.057562828, 6.787694e-08, 1)
+energy = 2.87
+texture = SubResource("GradientTexture2D_8ingl")

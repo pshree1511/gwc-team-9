@@ -1,3 +1,4 @@
+
 [gd_scene load_steps=8 format=3 uid="uid://cjd5yc4r2umcv"]
 
 [ext_resource type="Script" uid="uid://bw8fcfw1exeny" path="res://monster.gd" id="2_kdubu"]
@@ -46,3 +47,8 @@ texture = ExtResource("6_kdubu")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(5.970154, 207.27269)
 shape = SubResource("RectangleShape2D_0hol4")
+
+[gd_scene format=3 uid="uid://b5ppxg8bfiqj4"]
+
+[node name="Node2D" type="Node2D" unique_id=1240280583]
+

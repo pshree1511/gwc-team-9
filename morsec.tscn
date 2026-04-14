@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b7twr2qmtxsx1"]
+
+[ext_resource type="Texture2D" uid="uid://2d6g0rbehj00" path="res://scnes/characters/pixil-frame-0 (1).png" id="1_i5yjx"]
+
+[node name="Window" type="Window" unique_id=864730816]
+oversampling_override = 1.0
+position = Vector2i(0, 36)
+size = Vector2i(169, 206)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=485044401]
+texture_filter = 2
+position = Vector2(84.88501, 103.45672)
+scale = Vector2(-0.28002617, -0.2572668)
+texture = ExtResource("1_i5yjx")
+flip_h = true
+flip_v = true
