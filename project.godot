@@ -27,8 +27,8 @@ g="*uid://cmta3dtobklcw"
 
 [display]
 
-window/size/viewport_width=1024
-window/size/viewport_height=1024
+window/size/viewport_width=830
+window/size/viewport_height=650
 window/stretch/mode="canvas_items"
 
 [input]
