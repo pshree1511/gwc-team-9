@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dt1qc80oxfrpu"]
+[gd_scene format=3 uid="uid://dt1qc80oxfrpu"]
 
 [ext_resource type="Script" uid="uid://dmqwr3gc3oqvn" path="res://scripts/main.gd" id="1_kek77"]
 [ext_resource type="Texture2D" uid="uid://bjbhdb2myfoht" path="res://newgodotbackground.png" id="2_0xm2m"]
@@ -6,35 +6,46 @@
 [ext_resource type="PackedScene" uid="uid://lo3cig0voy5d" path="res://scenes/fairy.tscn" id="4_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://b362nmldq8b1a" path="res://scenes/fairy_dialogue.tscn" id="5_lquwl"]
 [ext_resource type="PackedScene" uid="uid://ua3ogns65v1y" path="res://scenes/vultureDialogue.tscn" id="6_7mycd"]
+[ext_resource type="Texture2D" uid="uid://3uroo8yx1a0r" path="res://back-button-enlarged-pixilart.png" id="7_272bh"]
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" unique_id=496990461]
 script = ExtResource("1_kek77")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=975813217]
 offset_right = 1507.0
 offset_bottom = 1028.0
 texture = ExtResource("2_0xm2m")
 
-[node name="VultureShell" type="CharacterBody2D" parent="TextureRect"]
+[node name="VultureShell" type="CharacterBody2D" parent="TextureRect" unique_id=724056061]
 
-[node name="Vulture" parent="TextureRect/VultureShell" instance=ExtResource("3_h2yge")]
+[node name="Vulture" parent="TextureRect/VultureShell" unique_id=1447322227 instance=ExtResource("3_h2yge")]
 position = Vector2(483, 765)
 
-[node name="FairyShell" type="CharacterBody2D" parent="TextureRect"]
+[node name="FairyShell" type="CharacterBody2D" parent="TextureRect" unique_id=1493781689]
 
-[node name="Fairy" parent="TextureRect/FairyShell" instance=ExtResource("4_1bvp3")]
+[node name="Fairy" parent="TextureRect/FairyShell" unique_id=858865050 instance=ExtResource("4_1bvp3")]
 position = Vector2(53, 24)
 
-[node name="FairyDialogueShell" type="CharacterBody2D" parent="TextureRect"]
+[node name="FairyDialogueShell" type="CharacterBody2D" parent="TextureRect" unique_id=1092451508]
 
-[node name="fairyDialogue" parent="TextureRect/FairyDialogueShell" instance=ExtResource("5_lquwl")]
+[node name="fairyDialogue" parent="TextureRect/FairyDialogueShell" unique_id=243382348 instance=ExtResource("5_lquwl")]
 position = Vector2(-60, 12)
 
-[node name="VultureDialogueShell" type="CharacterBody2D" parent="TextureRect"]
+[node name="VultureDialogueShell" type="CharacterBody2D" parent="TextureRect" unique_id=41125729]
 
-[node name="vultureDialogue" parent="TextureRect/VultureDialogueShell" instance=ExtResource("6_7mycd")]
+[node name="vultureDialogue" parent="TextureRect/VultureDialogueShell" unique_id=1734190998 instance=ExtResource("6_7mycd")]
 
-[node name="Cells" type="Node2D" parent="."]
+[node name="Cells" type="Node2D" parent="." unique_id=1125792782]
 position = Vector2(375, 375)
 
-[node name="Pieces" type="Node2D" parent="."]
+[node name="Pieces" type="Node2D" parent="." unique_id=872078314]
+
+[node name="Puzzle2Button" type="TextureButton" parent="." unique_id=834254756]
+offset_left = 497.0
+offset_top = -50.0
+offset_right = 597.0
+offset_bottom = 50.0
+scale = Vector2(1.7183552, 2.0382276)
+texture_normal = ExtResource("7_272bh")
+
+[connection signal="pressed" from="Puzzle2Button" to="." method="_on_puzzle_2_button_pressed"]

@@ -15,3 +15,7 @@ func _on_child_text_edited(solved2):
 		$characters/butterfly/AnimatedSprite2D2.show()
 		await get_tree().create_timer(1).timeout
 		$Node2D.hide()
+
+
+func _on_puzzle_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://game.tscn")

@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cxsxb0o8ajrua" path="res://mediumbranch.png" id="1_77j1r"]
 [ext_resource type="Texture2D" uid="uid://bjej8roofjitp" path="res://home button enlarged.png" id="2_hgotr"]
 [ext_resource type="Script" uid="uid://ce7tud5ovdx0" path="res://puzzle.gd" id="2_q2gwe"]
+[ext_resource type="Texture2D" uid="uid://bh88qy12xggy6" path="res://start-button-enlarged-pixilart (2).png" id="4_q2gwe"]
 
 [node name="Node2D" type="Node2D" unique_id=613840371]
 
@@ -13,11 +14,20 @@ texture = ExtResource("1_77j1r")
 script = ExtResource("2_q2gwe")
 
 [node name="TextureButton" type="TextureButton" parent="Sprite2D" unique_id=1965569375]
-offset_left = 368.7231
-offset_top = 133.31949
-offset_right = 685.87646
-offset_bottom = 347.02695
+offset_left = -23.20636
+offset_top = 129.92282
+offset_right = 293.947
+offset_bottom = 343.63028
 scale = Vector2(3.4892292, 2.4066567)
 texture_normal = ExtResource("2_hgotr")
 
+[node name="TextureButton2" type="TextureButton" parent="Sprite2D" unique_id=390845475]
+offset_left = -409.97882
+offset_top = -437.32184
+offset_right = -144.39508
+offset_bottom = -296.92596
+scale = Vector2(3.1143548, 3.6267612)
+texture_normal = ExtResource("4_q2gwe")
+
 [connection signal="pressed" from="Sprite2D/TextureButton" to="Sprite2D" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Sprite2D/TextureButton2" to="Sprite2D" method="_on_texture_button_2_pressed"]

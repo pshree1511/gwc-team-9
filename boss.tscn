@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cdym1xi2n3hyf" path="res://bossbranch.png" id="1_skx2t"]
 [ext_resource type="Script" uid="uid://cuk4arrdd8agb" path="res://boss.gd" id="2_lnbgr"]
 [ext_resource type="Texture2D" uid="uid://bjej8roofjitp" path="res://home button enlarged.png" id="3_o1i15"]
+[ext_resource type="Texture2D" uid="uid://bh88qy12xggy6" path="res://start-button-enlarged-pixilart (2).png" id="4_lnbgr"]
 
 [node name="Node2D" type="Node2D" unique_id=298472927]
 
@@ -20,4 +21,13 @@ offset_bottom = 316.82712
 scale = Vector2(2.1644151, 1.7933004)
 texture_normal = ExtResource("3_o1i15")
 
+[node name="TextureButton2" type="TextureButton" parent="Sprite2D" unique_id=2125966302]
+offset_left = -692.2141
+offset_top = -45.904644
+offset_right = -591.8748
+offset_bottom = 63.818592
+scale = Vector2(2.3717265, 2.2091947)
+texture_normal = ExtResource("4_lnbgr")
+
 [connection signal="pressed" from="Sprite2D/TextureButton" to="Sprite2D" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Sprite2D/TextureButton2" to="Sprite2D" method="_on_texture_button_2_pressed"]

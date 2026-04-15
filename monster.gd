@@ -64,3 +64,7 @@ func shoot_fireball():
 
 	fireball.global_position = global_position
 	fireball.direction = Vector2.LEFT
+
+
+func _on_texture_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://game.tscn")

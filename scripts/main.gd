@@ -75,3 +75,7 @@ func generate_pieces():
 			)
 			
 	
+
+
+func _on_puzzle_2_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://game.tscn")
