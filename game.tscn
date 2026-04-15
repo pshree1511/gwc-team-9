@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://djjo65am8fqb4"]
+[gd_scene load_steps=12 format=3 uid="uid://djjo65am8fqb4"]
 
 [ext_resource type="Script" uid="uid://bqn5prolgibud" path="res://maintree.gd" id="2_mfdv2"]
 [ext_resource type="Texture2D" uid="uid://c87tocswuuees" path="res://maintree.png" id="3_eow3j"]
@@ -12,40 +12,44 @@
 [ext_resource type="Texture2D" uid="uid://c4ov3ux8s6xtt" path="res://butterfly-card-2-pixilart (2).png" id="10_lc2xo"]
 [ext_resource type="Texture2D" uid="uid://by7tghn6gi3pa" path="res://puzzle2.png" id="11_215e1"]
 
-[node name="Game" type="Node2D" unique_id=946488295]
+[node name="Game" type="Node2D"]
+position = Vector2(3, 163)
 
-[node name="Node2D" type="Node2D" parent="." unique_id=319908229]
+[node name="Node2D" type="Node2D" parent="."]
 
-[node name="Tree" type="Node2D" parent="." unique_id=1472607247]
+[node name="Tree" type="Node2D" parent="."]
 
-[node name="Sprite2D" type="Sprite2D" parent="Tree" unique_id=1628187556]
+[node name="Sprite2D" type="Sprite2D" parent="Tree"]
 position = Vector2(574.5, 322.75)
 scale = Vector2(3.596875, 3.602778)
 texture = ExtResource("3_eow3j")
 script = ExtResource("2_mfdv2")
 
-[node name="TextureButton" type="TextureButton" parent="Tree/Sprite2D" unique_id=142967484]
+[node name="TextureButton" type="TextureButton" parent="Tree/Sprite2D"]
 offset_left = -88.8271
 offset_top = -27.96453
 offset_right = -38.827103
 offset_bottom = 22.03547
 texture_normal = ExtResource("3_fc0e3")
+metadata/_edit_use_anchors_ = true
 
-[node name="TextureButton2" type="TextureButton" parent="Tree/Sprite2D" unique_id=1033258966]
+[node name="TextureButton2" type="TextureButton" parent="Tree/Sprite2D"]
 offset_left = -56.576885
 offset_top = -90.41634
 offset_right = -6.576885
 offset_bottom = -40.416344
 texture_normal = ExtResource("4_j5wjh")
+metadata/_edit_use_anchors_ = true
 
-[node name="TextureButton3" type="TextureButton" parent="Tree/Sprite2D" unique_id=1067217650]
+[node name="TextureButton3" type="TextureButton" parent="Tree/Sprite2D"]
 offset_left = 13.483926
 offset_top = -46.28373
 offset_right = 63.483925
 offset_bottom = 3.7162704
 texture_normal = ExtResource("5_vef74")
+metadata/_edit_use_anchors_ = true
 
-[node name="TextureButton4" type="TextureButton" parent="Tree/Sprite2D" unique_id=279268367]
+[node name="TextureButton4" type="TextureButton" parent="Tree/Sprite2D"]
 offset_left = -167.50652
 offset_top = 13.114876
 offset_right = -67.506516
@@ -53,8 +57,9 @@ offset_bottom = 113.114876
 scale = Vector2(0.9110338, 0.9666924)
 texture_normal = ExtResource("6_mfdv2")
 texture_hover = ExtResource("7_iotsf")
+metadata/_edit_use_anchors_ = true
 
-[node name="TextureButton5" type="TextureButton" parent="Tree/Sprite2D" unique_id=582191920]
+[node name="TextureButton5" type="TextureButton" parent="Tree/Sprite2D"]
 offset_left = 2.085143
 offset_top = 12.28219
 offset_right = 102.085144
@@ -62,14 +67,16 @@ offset_bottom = 112.28219
 scale = Vector2(1.0556031, 0.9888976)
 texture_normal = ExtResource("8_vef74")
 texture_hover = ExtResource("9_hve3p")
+metadata/_edit_use_anchors_ = true
 
-[node name="TextureButton6" type="TextureButton" parent="Tree/Sprite2D" unique_id=52049395]
+[node name="TextureButton6" type="TextureButton" parent="Tree/Sprite2D"]
 offset_left = -106.3423
 offset_top = 10.894369
 offset_right = -6.3423004
 offset_bottom = 110.89437
 texture_normal = ExtResource("10_lc2xo")
 texture_hover = ExtResource("11_215e1")
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="Tree/Sprite2D/TextureButton" to="Tree/Sprite2D" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Tree/Sprite2D/TextureButton" to="Tree/Sprite2D/TextureButton" method="_on_pressed"]
