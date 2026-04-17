@@ -34,8 +34,9 @@ script = ExtResource("2_mfdv2")
 
 [node name="TextureButton" type="TextureButton" parent="Tree/InfectedTree"]
 anchors_preset = -1
-anchor_right = 0.120137244
-anchor_bottom = 0.19674669
+anchor_left = -0.014848589
+anchor_right = 0.12013725
+anchor_bottom = 0.19707309
 offset_left = -268.74054
 offset_top = -111.423065
 offset_right = -218.74054
@@ -46,20 +47,20 @@ metadata/_edit_use_anchors_ = true
 
 [node name="TextureButton2" type="TextureButton" parent="Tree/InfectedTree"]
 anchors_preset = -1
-anchor_right = 0.11026665
-anchor_bottom = 0.17907077
-offset_left = -151.46866
-offset_top = -345.60367
-offset_right = -101.46866
-offset_bottom = -295.60367
+anchor_right = 0.120531105
+anchor_bottom = 0.18069254
+offset_left = -156.656
+offset_top = -347.5026
+offset_right = -106.656006
+offset_bottom = -297.5026
 texture_normal = ExtResource("4_j5wjh")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureButton3" type="TextureButton" parent="Tree/InfectedTree"]
 anchors_preset = -1
-anchor_right = 0.12652187
-anchor_bottom = 0.19879216
+anchor_right = 0.13807014
+anchor_bottom = 0.1771055
 offset_left = 96.25869
 offset_top = -177.41315
 offset_right = 146.25868
@@ -133,8 +134,8 @@ script = ExtResource("2_mfdv2")
 
 [node name="TextureButton" type="TextureButton" parent="Tree/HealthyTree"]
 anchors_preset = -1
-anchor_right = 0.120137244
-anchor_bottom = 0.19674669
+anchor_right = 0.13213569
+anchor_bottom = 0.19707309
 offset_left = -268.74054
 offset_top = -111.423065
 offset_right = -218.74054
@@ -145,8 +146,8 @@ metadata/_edit_use_anchors_ = true
 
 [node name="TextureButton2" type="TextureButton" parent="Tree/HealthyTree"]
 anchors_preset = -1
-anchor_right = 0.11026665
-anchor_bottom = 0.17907077
+anchor_right = 0.1337233
+anchor_bottom = 0.17942883
 offset_left = -148.31311
 offset_top = -327.46198
 offset_right = -98.31311
@@ -157,8 +158,8 @@ metadata/_edit_use_anchors_ = true
 
 [node name="TextureButton3" type="TextureButton" parent="Tree/HealthyTree"]
 anchors_preset = -1
-anchor_right = 0.12652187
-anchor_bottom = 0.19879216
+anchor_right = 0.13228352
+anchor_bottom = 0.18509378
 offset_left = 96.25869
 offset_top = -177.41315
 offset_right = 146.25868

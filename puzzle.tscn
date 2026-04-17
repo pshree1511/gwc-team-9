@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dinv38f2v2hgo"]
 
-[ext_resource type="Texture2D" uid="uid://cheyufrxw2oir" path="res://puzzle_branch_gem.png" id="1_q2gwe"]
+[ext_resource type="Texture2D" uid="uid://c6k40tp500ww" path="res://infected_tree_puzzle_branch_gem.png" id="1_q2gwe"]
 [ext_resource type="Script" uid="uid://ce7tud5ovdx0" path="res://puzzle.gd" id="2_q2gwe"]
 [ext_resource type="Texture2D" uid="uid://dkjhy6vcjoe3x" path="res://home_button_gem.png" id="3_q2gwe"]
 [ext_resource type="Texture2D" uid="uid://delcyca0fbrd1" path="res://start_button_gem.png" id="4_q2gwe"]
@@ -8,16 +8,16 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(525.53265, 540.54987)
-scale = Vector2(3.6320782, 2.9679053)
+position = Vector2(511.7081, 616.35583)
+scale = Vector2(5.708108, 4.196319)
 texture = ExtResource("1_q2gwe")
 script = ExtResource("2_q2gwe")
 
 [node name="TextureButton" type="TextureButton" parent="Sprite2D"]
-offset_left = -37.866108
-offset_top = 20.367939
-offset_right = -2.2001534
-offset_bottom = 47.248413
+offset_left = -13.613635
+offset_top = 18.264612
+offset_right = 12.918399
+offset_bottom = 40.462013
 scale = Vector2(3.4892292, 2.4066567)
 texture_normal = ExtResource("3_q2gwe")
 ignore_texture_size = true
@@ -25,10 +25,10 @@ stretch_mode = 0
 
 [node name="TextureButton2" type="TextureButton" parent="Sprite2D"]
 visible = false
-offset_left = -38.416748
-offset_top = -70.26837
-offset_right = 1.1886826
-offset_bottom = -50.10836
+offset_left = -16.41666
+offset_top = -47.0307
+offset_right = 13.823351
+offset_bottom = -32.015785
 scale = Vector2(3.1143548, 3.6267612)
 texture_normal = ExtResource("4_q2gwe")
 ignore_texture_size = true

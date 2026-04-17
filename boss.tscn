@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bbq6ickilmlky"]
 
-[ext_resource type="Texture2D" uid="uid://ddrt1mckfrxod" path="res://boss_branch_gem.png" id="1_lnbgr"]
+[ext_resource type="Texture2D" uid="uid://dhqkj21tt85mm" path="res://infected_tree_boss_branch_gem.png" id="1_lnbgr"]
 [ext_resource type="Script" uid="uid://cuk4arrdd8agb" path="res://boss.gd" id="2_lnbgr"]
 [ext_resource type="Texture2D" uid="uid://dkjhy6vcjoe3x" path="res://home_button_gem.png" id="3_lnbgr"]
 [ext_resource type="Texture2D" uid="uid://delcyca0fbrd1" path="res://start_button_gem.png" id="4_o1i15"]
@@ -8,16 +8,16 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(509.6551, 514.29974)
-scale = Vector2(2.7018154, 4.7311954)
+position = Vector2(491.00003, 456)
+scale = Vector2(3.8114958, 7.129857)
 texture = ExtResource("1_lnbgr")
 script = ExtResource("2_lnbgr")
 
 [node name="TextureButton" type="TextureButton" parent="Sprite2D"]
-offset_left = 8.640455
-offset_top = -91.160835
-offset_right = 78.75169
-offset_bottom = -69.59197
+offset_left = -119.25928
+offset_top = 45.899178
+offset_right = -71.5684
+offset_bottom = 62.02681
 scale = Vector2(2.1644151, 1.7933004)
 texture_normal = ExtResource("3_lnbgr")
 ignore_texture_size = true
@@ -25,10 +25,10 @@ stretch_mode = 0
 
 [node name="TextureButton2" type="TextureButton" parent="Sprite2D"]
 visible = false
-offset_left = -170.49835
-offset_top = -93.48584
-offset_right = -108.076065
-offset_bottom = -74.063965
+offset_left = -119.5295
+offset_top = 9.545097
+offset_right = -75.36673
+offset_bottom = 23.197678
 scale = Vector2(2.3717265, 2.2091947)
 texture_normal = ExtResource("4_o1i15")
 ignore_texture_size = true

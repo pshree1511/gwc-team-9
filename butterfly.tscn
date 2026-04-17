@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://ch6ttr1djeh70"]
 
-[ext_resource type="Texture2D" uid="uid://dfa5lmgfl6d8e" path="res://tree_branch_gem.png" id="1_hocdr"]
+[ext_resource type="Texture2D" uid="uid://u6g4c5slbewu" path="res://infected_tree_butterfly_branch_gem.png" id="1_hocdr"]
 [ext_resource type="Script" path="res://butterfly.gd" id="2_hocdr"]
 [ext_resource type="Texture2D" uid="uid://dkjhy6vcjoe3x" path="res://home_button_gem.png" id="3_hocdr"]
 [ext_resource type="Texture2D" uid="uid://delcyca0fbrd1" path="res://start_button_gem.png" id="4_i02rf"]
@@ -8,26 +8,26 @@
 [node name="Butterfly" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(502, 575)
-scale = Vector2(3.5298011, 3.4476216)
+position = Vector2(515.01825, 528.98804)
+scale = Vector2(4.5389724, 4.029178)
 texture = ExtResource("1_hocdr")
 script = ExtResource("2_hocdr")
 
 [node name="TextureButton" type="TextureButton" parent="Sprite2D"]
-offset_left = -100.855545
-offset_top = 30.745838
-offset_right = -53.404797
-offset_bottom = 64.5331
+offset_left = -93.41724
+offset_top = 17.270704
+offset_right = -59.590622
+offset_bottom = 41.799564
 scale = Vector2(3.0986607, 1.9058133)
 texture_normal = ExtResource("3_hocdr")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TextureButton2" type="TextureButton" parent="Sprite2D"]
-offset_left = -101.70545
-offset_top = -48.72924
-offset_right = -54.426846
-offset_bottom = -25.6209
+offset_left = -92.095345
+offset_top = -39.929947
+offset_right = -59.764618
+offset_bottom = -23.613625
 scale = Vector2(3.0979588, 2.9999201)
 texture_normal = ExtResource("4_i02rf")
 ignore_texture_size = true

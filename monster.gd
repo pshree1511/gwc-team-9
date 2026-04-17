@@ -51,7 +51,7 @@ func shoot_loop():
 	var shots_fired = 0
 
 #change back to 5
-	while shots_fired < 2:
+	while shots_fired < 4:
 		await get_tree().create_timer(2.0).timeout
 		if get_tree().paused:
 			return
