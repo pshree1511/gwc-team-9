@@ -41,16 +41,24 @@ extends Node2D
 
 @export var fireball_scene: PackedScene
 
+signal finished_shooting
+
 func _ready():
 	print("Monster ready")
 	shoot_loop()
 
 func shoot_loop():
-	while true:
+	var shots_fired = 0
+
+#change back to 5
+	while shots_fired < 2:
 		await get_tree().create_timer(2.0).timeout
 		if get_tree().paused:
 			return
 		shoot_fireball()
+		shots_fired += 1
+	
+	emit_signal("finished_shooting")
 
 func shoot_fireball():
 	print("Shooting")

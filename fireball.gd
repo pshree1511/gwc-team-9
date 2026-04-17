@@ -12,6 +12,8 @@
 extends Area2D
 var hit = false
 
+signal game_over
+
 @export var speed := 400.0
 var direction := Vector2.ZERO
 
@@ -23,4 +25,5 @@ func _on_body_entered(body):
 		print("Player hit!")
 		get_tree().paused = true
 		hit = true
+		Globals.game_over.emit()
 		
