@@ -1,31 +1,31 @@
-[gd_scene format=3 uid="uid://bbq6ickilmlky"]
+[gd_scene load_steps=5 format=3 uid="uid://bbq6ickilmlky"]
 
-[ext_resource type="Texture2D" uid="uid://cdym1xi2n3hyf" path="res://bossbranch.png" id="1_skx2t"]
+[ext_resource type="Texture2D" uid="uid://ddrt1mckfrxod" path="res://boss_branch_gem.png" id="1_lnbgr"]
 [ext_resource type="Script" uid="uid://cuk4arrdd8agb" path="res://boss.gd" id="2_lnbgr"]
 [ext_resource type="Texture2D" uid="uid://bjej8roofjitp" path="res://home button enlarged.png" id="3_o1i15"]
 [ext_resource type="Texture2D" uid="uid://bh88qy12xggy6" path="res://start-button-enlarged-pixilart (2).png" id="4_lnbgr"]
 
-[node name="Node2D" type="Node2D" unique_id=298472927]
+[node name="Node2D" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=34280106]
-position = Vector2(578, 334.00003)
-scale = Vector2(0.7873287, 0.8931565)
-texture = ExtResource("1_skx2t")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(512.37225, 511.0504)
+scale = Vector2(2.2878408, 3.2605557)
+texture = ExtResource("1_lnbgr")
 script = ExtResource("2_lnbgr")
 
-[node name="TextureButton" type="TextureButton" parent="Sprite2D" unique_id=1661661248]
-offset_left = -702.375
-offset_top = 186.97726
-offset_right = -513.445
-offset_bottom = 316.82712
+[node name="TextureButton" type="TextureButton" parent="Sprite2D"]
+offset_left = 1.1486206
+offset_top = -198.14124
+offset_right = 190.07861
+offset_bottom = -68.29138
 scale = Vector2(2.1644151, 1.7933004)
 texture_normal = ExtResource("3_o1i15")
 
-[node name="TextureButton2" type="TextureButton" parent="Sprite2D" unique_id=2125966302]
-offset_left = -692.2141
-offset_top = -45.904644
-offset_right = -591.8748
-offset_bottom = 63.818592
+[node name="TextureButton2" type="TextureButton" parent="Sprite2D"]
+offset_left = -224.39154
+offset_top = -243.22552
+offset_right = -124.052246
+offset_bottom = -133.50229
 scale = Vector2(2.3717265, 2.2091947)
 texture_normal = ExtResource("4_lnbgr")
 

@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://be7p4h7fa2hqf"]
+[gd_scene load_steps=16 format=3 uid="uid://be7p4h7fa2hqf"]
 
 [ext_resource type="PackedScene" uid="uid://cu810qiak6wea" path="res://scnes/characters/butterfly.tscn" id="1_0e48y"]
 [ext_resource type="Script" uid="uid://bj5ym1w8a0t61" path="res://scripts/brittany.gd" id="1_naoyu"]
@@ -24,15 +24,15 @@ fill = 1
 fill_from = Vector2(0.5043478, 0.4869565)
 fill_to = Vector2(0.4869565, 0)
 
-[node name="Game" type="Node2D" unique_id=1733266526]
+[node name="Game" type="Node2D"]
 script = ExtResource("1_naoyu")
 
-[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1151072408]
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
 position = Vector2(-0.7500076, 0.4999962)
 scale = Vector2(6.0234375, 3.390625)
 color = Color(0.14225578, 0.14225581, 0.14225575, 1)
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1418122766]
+[node name="TextureRect" type="TextureRect" parent="."]
 modulate = Color(2.2399983, 2.2399983, 2.2399983, 1)
 self_modulate = Color(0.7176471, 1, 1, 1)
 offset_left = -193.0
@@ -42,35 +42,35 @@ offset_bottom = 111.0
 texture = ExtResource("3_naoyu")
 stretch_mode = 1
 
-[node name="characters" type="Node2D" parent="." unique_id=1659411791]
+[node name="characters" type="Node2D" parent="."]
 position = Vector2(-0.75, 0.5)
 scale = Vector2(6.0234375, 3.390625)
 
-[node name="flower2" parent="characters" unique_id=949234357 instance=ExtResource("3_epypp")]
+[node name="flower2" parent="characters" instance=ExtResource("3_epypp")]
 position = Vector2(19.88067, -12.534561)
 scale = Vector2(0.18594034, 0.3303226)
 
-[node name="flower1" parent="characters" unique_id=1428100697 instance=ExtResource("2_epypp")]
+[node name="flower1" parent="characters" instance=ExtResource("2_epypp")]
 position = Vector2(-23.450064, -13.124423)
 scale = Vector2(0.20088197, 0.35686636)
 
-[node name="butterfly" parent="characters" unique_id=1282778808 instance=ExtResource("1_0e48y")]
+[node name="butterfly" parent="characters" instance=ExtResource("1_0e48y")]
 position = Vector2(1.4526602, -3.6866348)
 scale = Vector2(0.29551232, 0.52497697)
 
-[node name="flower5" parent="characters" unique_id=860570568 instance=ExtResource("6_7mycd")]
+[node name="flower5" parent="characters" instance=ExtResource("6_7mycd")]
 position = Vector2(-18.469519, -0.737326)
 scale = Vector2(0.26728925, 0.4748387)
 
-[node name="flower4" parent="characters" unique_id=1415834660 instance=ExtResource("5_q6r6c")]
+[node name="flower4" parent="characters" instance=ExtResource("5_q6r6c")]
 position = Vector2(19.216602, 6.635946)
 scale = Vector2(0.15605707, 0.27723503)
 
-[node name="flower3" parent="characters" unique_id=494773390 instance=ExtResource("4_0hol4")]
+[node name="flower3" parent="characters" instance=ExtResource("4_0hol4")]
 position = Vector2(-23.948118, 13.419355)
 scale = Vector2(0.20088197, 0.35686636)
 
-[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1762801426]
+[node name="PointLight2D" type="PointLight2D" parent="."]
 position = Vector2(4, 4.999999)
 scale = Vector2(4.433594, 3.9765623)
 color = Color(0.9019608, 1, 1, 1)
@@ -78,27 +78,27 @@ energy = 3.47
 texture = SubResource("GradientTexture2D_fy71t")
 script = ExtResource("2_l71hm")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=976281064]
+[node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2.98, 2.98)
 
-[node name="Window" parent="." unique_id=1594010241 instance=ExtResource("9_bmxam")]
+[node name="Window" parent="." instance=ExtResource("9_bmxam")]
 
-[node name="Node" parent="." unique_id=1547035730 instance=ExtResource("10_l71hm")]
+[node name="Node" parent="." instance=ExtResource("10_l71hm")]
 offset_left = -45.0
 offset_top = 81.0
 offset_right = -8.0
 offset_bottom = 118.0
 
-[node name="PuzzleButton" type="TextureButton" parent="Node" unique_id=1616624584]
+[node name="PuzzleButton" type="TextureButton" parent="Node"]
 layout_mode = 0
-offset_left = 7.0
-offset_top = -211.00002
-offset_right = 107.0
-offset_bottom = -111.000015
+offset_left = -122.0
+offset_top = -201.00002
+offset_right = -22.0
+offset_bottom = -101.000015
 scale = Vector2(0.48000228, 0.56000006)
 texture_normal = ExtResource("12_fy71t")
 
-[node name="Node2D" parent="." unique_id=19125311 instance=ExtResource("12_g20ka")]
+[node name="Node2D" parent="." instance=ExtResource("12_g20ka")]
 visible = false
 position = Vector2(-2, -17)
 scale = Vector2(1.28, 1.28)

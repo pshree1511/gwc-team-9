@@ -1,31 +1,31 @@
-[gd_scene format=3 uid="uid://dinv38f2v2hgo"]
+[gd_scene load_steps=5 format=3 uid="uid://dinv38f2v2hgo"]
 
-[ext_resource type="Texture2D" uid="uid://cxsxb0o8ajrua" path="res://mediumbranch.png" id="1_77j1r"]
+[ext_resource type="Texture2D" uid="uid://cheyufrxw2oir" path="res://puzzle_branch_gem.png" id="1_q2gwe"]
 [ext_resource type="Texture2D" uid="uid://bjej8roofjitp" path="res://home button enlarged.png" id="2_hgotr"]
 [ext_resource type="Script" uid="uid://ce7tud5ovdx0" path="res://puzzle.gd" id="2_q2gwe"]
 [ext_resource type="Texture2D" uid="uid://bh88qy12xggy6" path="res://start-button-enlarged-pixilart (2).png" id="4_q2gwe"]
 
-[node name="Node2D" type="Node2D" unique_id=613840371]
+[node name="Node2D" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1379315942]
-position = Vector2(579, 322.25)
-scale = Vector2(0.7756498, 0.8832168)
-texture = ExtResource("1_77j1r")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(514.49994, 525.9246)
+scale = Vector2(2.391304, 2.5087547)
+texture = ExtResource("1_q2gwe")
 script = ExtResource("2_q2gwe")
 
-[node name="TextureButton" type="TextureButton" parent="Sprite2D" unique_id=1965569375]
-offset_left = -23.20636
-offset_top = 129.92282
-offset_right = 293.947
-offset_bottom = 343.63028
+[node name="TextureButton" type="TextureButton" parent="Sprite2D"]
+offset_left = -127.03194
+offset_top = -0.779068
+offset_right = 190.12141
+offset_bottom = 212.92839
 scale = Vector2(3.4892292, 2.4066567)
 texture_normal = ExtResource("2_hgotr")
 
-[node name="TextureButton2" type="TextureButton" parent="Sprite2D" unique_id=390845475]
-offset_left = -409.97882
-offset_top = -437.32184
-offset_right = -144.39508
-offset_bottom = -296.92596
+[node name="TextureButton2" type="TextureButton" parent="Sprite2D"]
+offset_left = -96.893394
+offset_top = -237.98904
+offset_right = 7.3760757
+offset_bottom = -137.98904
 scale = Vector2(3.1143548, 3.6267612)
 texture_normal = ExtResource("4_q2gwe")
 

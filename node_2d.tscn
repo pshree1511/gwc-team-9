@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://cjd5yc4r2umcv"]
 
+[ext_resource type="Texture2D" uid="uid://dxyfqjtub2hir" path="res://fireball_background_gem.png" id="1_d21ai"]
 [ext_resource type="Script" uid="uid://bw8fcfw1exeny" path="res://monster.gd" id="2_kdubu"]
 [ext_resource type="Texture2D" uid="uid://28oxog5a732s" path="res://pixil-frame-0 (1).png" id="2_q6r6c"]
 [ext_resource type="PackedScene" uid="uid://dcrefh5d2k5lm" path="res://Fireball.tscn" id="3_d21ai"]
 [ext_resource type="Script" path="res://sprite_2d.gd" id="3_kdubu"]
-[ext_resource type="Texture2D" uid="uid://c0pkg5y1mjkgh" path="res://pixil-frame-0.png" id="4_d21ai"]
 [ext_resource type="Texture2D" uid="uid://cbbw0l6bq6ndj" path="res://peterpan.png" id="6_kdubu"]
 [ext_resource type="Texture2D" uid="uid://3uroo8yx1a0r" path="res://back-button-enlarged-pixilart.png" id="7_d21ai"]
 
@@ -15,14 +15,16 @@ size = Vector2(89.552246, 221.8182)
 position = Vector2(85, 81)
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(417.50003, 323.50003)
-scale = Vector2(8.289999, 6.4500003)
-texture = ExtResource("4_d21ai")
+position = Vector2(426, 359.99997)
+scale = Vector2(0.99145, 0.7582764)
+texture = ExtResource("1_d21ai")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Background"]
+position = Vector2(-773.6144, 54.070034)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/StaticBody2D"]
-position = Vector2(2.9824562, 33.798973)
+position = Vector2(842.60425, 207.11668)
+scale = Vector2(10.819408, 13.889931)
 polygon = PackedVector2Array(-52.982456, 6.201027, -49.982456, 5.201027, -41.982456, 4.201027, -24.982456, 3.201027, -17.982456, 2.201027, -5.982456, 1.2010269, 1.0175438, 0.20102692, 7.017544, -0.7989731, 13.017544, -1.7989731, 16.017544, -2.798973, 18.017544, -3.798973, 22.017544, -4.798973, 23.017544, -5.798973, 27.017544, -6.798973, 33.017544, -7.798973, 35.017544, -8.798973, 37.017544, -9.798973, 39.017544, -10.798973, 39.017544, -7.798973, 38.017544, -5.798973, 37.017544, -3.798973, 36.017544, -1.7989731, 34.017544, 1.2010269, 32.017544, 3.201027, 30.017544, 4.201027, 29.017544, 6.201027, 28.017544, 7.201027, 27.017544, 9.201027, 26.017544, 10.201027, 25.017544, 12.201027, 24.017544, 14.201027, 24.017544, 14.201027, 23.017544, 16.201027, -52.982456, 16.201027)
 
 [node name="Monster" type="Node2D" parent="."]
@@ -36,10 +38,10 @@ scale = Vector2(6.16, 6.5249996)
 texture = ExtResource("2_q6r6c")
 
 [node name="TextureButton" type="TextureButton" parent="Monster"]
-offset_left = 220.99997
-offset_top = -18.0
-offset_right = 320.99997
-offset_bottom = 82.0
+offset_left = -130.0
+offset_top = -64.0
+offset_right = -30.0
+offset_bottom = 36.0
 scale = Vector2(1.52, 1.4400003)
 texture_normal = ExtResource("7_d21ai")
 metadata/_edit_use_anchors_ = true
