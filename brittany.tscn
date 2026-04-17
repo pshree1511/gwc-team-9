@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://1r2o3x6j1emu" path="res://scnes/characters/flower_5.tscn" id="6_7mycd"]
 [ext_resource type="PackedScene" uid="uid://cryihyqi8a04e" path="res://scnes/window.tscn" id="9_bmxam"]
 [ext_resource type="PackedScene" uid="uid://dgm3efvn66dr5" path="res://textbox.tscn" id="10_l71hm"]
-[ext_resource type="Texture2D" uid="uid://3uroo8yx1a0r" path="res://back-button-enlarged-pixilart.png" id="12_fy71t"]
+[ext_resource type="Texture2D" uid="uid://3tfhkvhleu50" path="res://back_to_home_gem-Picsart-BackgroundRemover.png" id="12_fy71t"]
 [ext_resource type="PackedScene" uid="uid://pksyhf8fiell" path="res://scnes/fire.tscn" id="12_g20ka"]
 
 [sub_resource type="Gradient" id="Gradient_g20ka"]
@@ -91,12 +91,14 @@ offset_bottom = 118.0
 
 [node name="PuzzleButton" type="TextureButton" parent="Node"]
 layout_mode = 0
-offset_left = -122.0
-offset_top = -201.00002
-offset_right = -22.0
-offset_bottom = -101.000015
+offset_left = -125.0
+offset_top = -196.0
+offset_right = -25.0
+offset_bottom = -96.0
 scale = Vector2(0.48000228, 0.56000006)
 texture_normal = ExtResource("12_fy71t")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="Node2D" parent="." instance=ExtResource("12_g20ka")]
 visible = false

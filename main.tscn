@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://lo3cig0voy5d" path="res://scenes/fairy.tscn" id="4_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://b362nmldq8b1a" path="res://scenes/fairy_dialogue.tscn" id="5_lquwl"]
 [ext_resource type="PackedScene" uid="uid://ua3ogns65v1y" path="res://scenes/vultureDialogue.tscn" id="6_7mycd"]
-[ext_resource type="Texture2D" uid="uid://3uroo8yx1a0r" path="res://back-button-enlarged-pixilart.png" id="7_272bh"]
+[ext_resource type="Texture2D" uid="uid://3tfhkvhleu50" path="res://back_to_home_gem-Picsart-BackgroundRemover.png" id="7_272bh"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_kek77")
@@ -41,11 +41,13 @@ position = Vector2(375, 375)
 [node name="Pieces" type="Node2D" parent="."]
 
 [node name="Puzzle2Button" type="TextureButton" parent="."]
-offset_left = 860.99994
-offset_top = -49.999996
-offset_right = 960.99994
-offset_bottom = 50.000004
+offset_left = 826.0
+offset_top = 3.0000038
+offset_right = 926.0
+offset_bottom = 103.0
 scale = Vector2(1.7183552, 2.0382276)
 texture_normal = ExtResource("7_272bh")
+ignore_texture_size = true
+stretch_mode = 0
 
 [connection signal="pressed" from="Puzzle2Button" to="." method="_on_puzzle_2_button_pressed"]
