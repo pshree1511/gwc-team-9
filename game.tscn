@@ -1,6 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://djjo65am8fqb4"]
+[gd_scene load_steps=13 format=3 uid="uid://djjo65am8fqb4"]
 
-[ext_resource type="Texture2D" uid="uid://dhgoay2dojjv7" path="res://tree_from_gem.png" id="1_mfdv2"]
+[ext_resource type="Texture2D" uid="uid://b0nobl3qd0fed" path="res://trasnparent_tree_gem.png" id="1_iotsf"]
 [ext_resource type="Script" uid="uid://bqn5prolgibud" path="res://maintree.gd" id="2_mfdv2"]
 [ext_resource type="Texture2D" uid="uid://b7pfqif0jmp27" path="res://greenquestion.png" id="3_fc0e3"]
 [ext_resource type="Texture2D" uid="uid://cn4honfvnwari" path="res://pixil-frame-0 (5).png" id="4_j5wjh"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://c5v6dqu07kjje" path="res://boss-pixilart (2).png" id="9_hve3p"]
 [ext_resource type="Texture2D" uid="uid://c4ov3ux8s6xtt" path="res://butterfly-card-2-pixilart (2).png" id="10_lc2xo"]
 [ext_resource type="Texture2D" uid="uid://by7tghn6gi3pa" path="res://puzzle2.png" id="11_215e1"]
+[ext_resource type="Texture2D" uid="uid://dbnge4gqikwmi" path="res://background_night.jpg" id="12_lc2xo"]
 
 [node name="Game" type="Node2D"]
 position = Vector2(3, 163)
@@ -20,9 +21,10 @@ position = Vector2(3, 163)
 [node name="Tree" type="Node2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Tree"]
-position = Vector2(532.512, 346.83252)
-scale = Vector2(1.3452084, 1.2729188)
-texture = ExtResource("1_mfdv2")
+top_level = true
+position = Vector2(516, 534)
+scale = Vector2(1.1775835, 1.2264593)
+texture = ExtResource("1_iotsf")
 script = ExtResource("2_mfdv2")
 
 [node name="TextureButton" type="TextureButton" parent="Tree/Sprite2D"]
@@ -62,15 +64,16 @@ stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureButton4" type="TextureButton" parent="Tree/Sprite2D"]
+top_level = true
 anchors_preset = -1
-anchor_left = -0.2125945
-anchor_top = -0.50262636
-anchor_right = -0.2125945
-anchor_bottom = -0.50262636
-offset_left = -353.48578
-offset_top = 161.96439
-offset_right = 228.264
-offset_bottom = 841.6162
+anchor_left = 0.245
+anchor_top = 0.61021096
+anchor_right = 0.347637
+anchor_bottom = 0.73269516
+offset_left = -173.88
+offset_top = 106.14398
+offset_right = 74.464355
+offset_bottom = 325.1938
 scale = Vector2(0.9110338, 0.9666924)
 texture_normal = ExtResource("6_mfdv2")
 texture_hover = ExtResource("7_iotsf")
@@ -78,13 +81,16 @@ stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureButton5" type="TextureButton" parent="Tree/Sprite2D"]
+top_level = true
 anchors_preset = -1
-anchor_right = 0.13733757
-anchor_bottom = 0.2513545
-offset_left = 97.00207
-offset_top = 124.25576
-offset_right = 197.00208
-offset_bottom = 224.2558
+anchor_left = -0.01171869
+anchor_top = 0.1479742
+anchor_right = 0.1875894
+anchor_bottom = 0.37027645
+offset_left = 673.0
+offset_top = 588.4744
+offset_right = 773.0
+offset_bottom = 688.4746
 scale = Vector2(1.0556031, 0.9888976)
 texture_normal = ExtResource("8_vef74")
 texture_hover = ExtResource("9_hve3p")
@@ -92,18 +98,25 @@ stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureButton6" type="TextureButton" parent="Tree/Sprite2D"]
+top_level = true
 anchors_preset = -1
-anchor_top = -0.022585906
-anchor_right = 0.15884206
-anchor_bottom = 0.21673432
-offset_left = -130.472
-offset_top = 145.46687
-offset_right = -30.471985
-offset_bottom = 245.46686
+anchor_left = -0.0107421875
+anchor_top = 0.0018281937
+anchor_right = 0.2197265
+anchor_bottom = 0.2376287
+offset_left = 378.0
+offset_top = 738.1279
+offset_right = 478.00006
+offset_bottom = 821.1155
 texture_normal = ExtResource("10_lc2xo")
 texture_hover = ExtResource("11_215e1")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
+
+[node name="BackgroundNight" type="Sprite2D" parent="Tree"]
+position = Vector2(512.5, 347.5)
+scale = Vector2(1.0029297, 1.0244141)
+texture = ExtResource("12_lc2xo")
 
 [connection signal="pressed" from="Tree/Sprite2D/TextureButton" to="Tree/Sprite2D" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Tree/Sprite2D/TextureButton" to="Tree/Sprite2D/TextureButton" method="_on_pressed"]

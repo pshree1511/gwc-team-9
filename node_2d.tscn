@@ -38,6 +38,7 @@ scale = Vector2(6.16, 6.5249996)
 texture = ExtResource("2_q6r6c")
 
 [node name="TextureButton" type="TextureButton" parent="Monster"]
+process_mode = 2
 offset_left = -130.0
 offset_top = -64.0
 offset_right = -30.0
