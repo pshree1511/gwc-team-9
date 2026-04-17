@@ -1,33 +1,36 @@
 [gd_scene load_steps=5 format=3 uid="uid://ch6ttr1djeh70"]
 
-[ext_resource type="Texture2D" uid="uid://duqginh6i3ep5" path="res://butterfly_branch_gem.png" id="1_hocdr"]
+[ext_resource type="Texture2D" uid="uid://dfa5lmgfl6d8e" path="res://tree_branch_gem.png" id="1_hocdr"]
 [ext_resource type="Script" path="res://butterfly.gd" id="2_hocdr"]
-[ext_resource type="Texture2D" uid="uid://bjej8roofjitp" path="res://home button enlarged.png" id="2_tstti"]
-[ext_resource type="Texture2D" uid="uid://bh88qy12xggy6" path="res://start-button-enlarged-pixilart (2).png" id="4_hocdr"]
+[ext_resource type="Texture2D" uid="uid://dkjhy6vcjoe3x" path="res://home_button_gem.png" id="3_hocdr"]
+[ext_resource type="Texture2D" uid="uid://delcyca0fbrd1" path="res://start_button_gem.png" id="4_i02rf"]
 
 [node name="Butterfly" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(493.5, 525.93665)
-scale = Vector2(2.5935962, 2.4686813)
+position = Vector2(502, 575)
+scale = Vector2(3.5298011, 3.4476216)
 texture = ExtResource("1_hocdr")
 script = ExtResource("2_hocdr")
 
 [node name="TextureButton" type="TextureButton" parent="Sprite2D"]
-offset_left = -189.79291
-offset_top = 0.026351929
-offset_right = -86.92855
-offset_bottom = 103.522675
+offset_left = -100.855545
+offset_top = 30.745838
+offset_right = -53.404797
+offset_bottom = 64.5331
 scale = Vector2(3.0986607, 1.9058133)
-texture_normal = ExtResource("2_tstti")
+texture_normal = ExtResource("3_hocdr")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="TextureButton2" type="TextureButton" parent="Sprite2D"]
-offset_left = -183.72176
-offset_top = -214.66385
-offset_right = -83.721756
-offset_bottom = -114.66385
+offset_left = -101.70545
+offset_top = -48.72924
+offset_right = -54.426846
+offset_bottom = -25.6209
 scale = Vector2(3.0979588, 2.9999201)
-texture_normal = ExtResource("4_hocdr")
+texture_normal = ExtResource("4_i02rf")
+ignore_texture_size = true
 stretch_mode = 0
 
 [connection signal="pressed" from="Sprite2D/TextureButton" to="Sprite2D" method="_on_texture_button_pressed"]
