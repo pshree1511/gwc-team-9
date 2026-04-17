@@ -25,6 +25,7 @@ Global="uid://f4rq6ix7i8o8"
 GameManager="uid://bmljgj7880inf"
 g="*uid://cmta3dtobklcw"
 Globals="*res://globals.gd"
+Music="*res://music.tscn"
 
 [display]
 
