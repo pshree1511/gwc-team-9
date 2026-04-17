@@ -1,107 +1,33 @@
-[gd_scene load_steps=16 format=3 uid="uid://be7p4h7fa2hqf"]
+[gd_scene load_steps=5 format=3 uid="uid://be7p4h7fa2hqf"]
 
-[ext_resource type="PackedScene" uid="uid://cu810qiak6wea" path="res://scnes/characters/butterfly.tscn" id="1_0e48y"]
-[ext_resource type="Script" uid="uid://bj5ym1w8a0t61" path="res://scripts/brittany.gd" id="1_naoyu"]
-[ext_resource type="PackedScene" uid="uid://lnpfjj5vtwty" path="res://scnes/characters/flower_1.tscn" id="2_epypp"]
-[ext_resource type="Script" uid="uid://bhui4q46uygr4" path="res://point_lightMAIN.gd" id="2_l71hm"]
-[ext_resource type="PackedScene" uid="uid://cw3fos7kyuqoo" path="res://scnes/characters/flower_2.tscn" id="3_epypp"]
-[ext_resource type="Texture2D" uid="uid://cdo0ha3jlkf46" path="res://scnes/pixil-frame-0.png" id="3_naoyu"]
-[ext_resource type="PackedScene" uid="uid://c4ym7dsiuuwft" path="res://scnes/characters/flower_3.tscn" id="4_0hol4"]
-[ext_resource type="PackedScene" uid="uid://cl7suw36y0sg1" path="res://scnes/characters/flower_4.tscn" id="5_q6r6c"]
-[ext_resource type="PackedScene" uid="uid://1r2o3x6j1emu" path="res://scnes/characters/flower_5.tscn" id="6_7mycd"]
-[ext_resource type="PackedScene" uid="uid://cryihyqi8a04e" path="res://scnes/window.tscn" id="9_bmxam"]
-[ext_resource type="PackedScene" uid="uid://dgm3efvn66dr5" path="res://textbox.tscn" id="10_l71hm"]
-[ext_resource type="Texture2D" uid="uid://3uroo8yx1a0r" path="res://back-button-enlarged-pixilart.png" id="12_fy71t"]
-[ext_resource type="PackedScene" uid="uid://pksyhf8fiell" path="res://scnes/fire.tscn" id="12_g20ka"]
+[ext_resource type="Texture2D" uid="uid://ddrt1mckfrxod" path="res://boss_branch_gem.png" id="1_w8v4e"]
+[ext_resource type="Script" uid="uid://cuk4arrdd8agb" path="res://boss.gd" id="2_lwgwc"]
+[ext_resource type="Texture2D" uid="uid://bjej8roofjitp" path="res://home button enlarged.png" id="3_gkksy"]
+[ext_resource type="Texture2D" uid="uid://bh88qy12xggy6" path="res://start-button-enlarged-pixilart (2).png" id="4_xvaq8"]
 
-[sub_resource type="Gradient" id="Gradient_g20ka"]
-offsets = PackedFloat32Array(0.13855422, 0.35240963, 1)
-colors = PackedColorArray(1, 1, 1, 1, 0.8846154, 0.8846154, 0.8846154, 1, 0, 0, 0, 1)
+[node name="Node2D" type="Node2D"]
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_fy71t"]
-gradient = SubResource("Gradient_g20ka")
-fill = 1
-fill_from = Vector2(0.5043478, 0.4869565)
-fill_to = Vector2(0.4869565, 0)
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(512.37225, 511.0504)
+scale = Vector2(2.2878408, 3.2605557)
+texture = ExtResource("1_w8v4e")
+script = ExtResource("2_lwgwc")
 
-[node name="Game" type="Node2D"]
-script = ExtResource("1_naoyu")
+[node name="TextureButton" type="TextureButton" parent="Sprite2D"]
+offset_left = 1.1486206
+offset_top = -198.14124
+offset_right = 190.07861
+offset_bottom = -68.29138
+scale = Vector2(2.1644151, 1.7933004)
+texture_normal = ExtResource("3_gkksy")
 
-[node name="CanvasModulate" type="CanvasModulate" parent="."]
-position = Vector2(-0.7500076, 0.4999962)
-scale = Vector2(6.0234375, 3.390625)
-color = Color(0.14225578, 0.14225581, 0.14225575, 1)
+[node name="TextureButton2" type="TextureButton" parent="Sprite2D"]
+offset_left = -224.39154
+offset_top = -243.22552
+offset_right = -124.052246
+offset_bottom = -133.50229
+scale = Vector2(2.3717265, 2.2091947)
+texture_normal = ExtResource("4_xvaq8")
 
-[node name="TextureRect" type="TextureRect" parent="."]
-modulate = Color(2.2399983, 2.2399983, 2.2399983, 1)
-self_modulate = Color(0.7176471, 1, 1, 1)
-offset_left = -193.0
-offset_top = -108.0
-offset_right = 192.0
-offset_bottom = 111.0
-texture = ExtResource("3_naoyu")
-stretch_mode = 1
-
-[node name="characters" type="Node2D" parent="."]
-position = Vector2(-0.75, 0.5)
-scale = Vector2(6.0234375, 3.390625)
-
-[node name="flower2" parent="characters" instance=ExtResource("3_epypp")]
-position = Vector2(19.88067, -12.534561)
-scale = Vector2(0.18594034, 0.3303226)
-
-[node name="flower1" parent="characters" instance=ExtResource("2_epypp")]
-position = Vector2(-23.450064, -13.124423)
-scale = Vector2(0.20088197, 0.35686636)
-
-[node name="butterfly" parent="characters" instance=ExtResource("1_0e48y")]
-position = Vector2(1.4526602, -3.6866348)
-scale = Vector2(0.29551232, 0.52497697)
-
-[node name="flower5" parent="characters" instance=ExtResource("6_7mycd")]
-position = Vector2(-18.469519, -0.737326)
-scale = Vector2(0.26728925, 0.4748387)
-
-[node name="flower4" parent="characters" instance=ExtResource("5_q6r6c")]
-position = Vector2(19.216602, 6.635946)
-scale = Vector2(0.15605707, 0.27723503)
-
-[node name="flower3" parent="characters" instance=ExtResource("4_0hol4")]
-position = Vector2(-23.948118, 13.419355)
-scale = Vector2(0.20088197, 0.35686636)
-
-[node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(4, 4.999999)
-scale = Vector2(4.433594, 3.9765623)
-color = Color(0.9019608, 1, 1, 1)
-energy = 3.47
-texture = SubResource("GradientTexture2D_fy71t")
-script = ExtResource("2_l71hm")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2.98, 2.98)
-
-[node name="Window" parent="." instance=ExtResource("9_bmxam")]
-
-[node name="Node" parent="." instance=ExtResource("10_l71hm")]
-offset_left = -45.0
-offset_top = 81.0
-offset_right = -8.0
-offset_bottom = 118.0
-
-[node name="PuzzleButton" type="TextureButton" parent="Node"]
-layout_mode = 0
-offset_left = -122.0
-offset_top = -201.00002
-offset_right = -22.0
-offset_bottom = -101.000015
-scale = Vector2(0.48000228, 0.56000006)
-texture_normal = ExtResource("12_fy71t")
-
-[node name="Node2D" parent="." instance=ExtResource("12_g20ka")]
-visible = false
-position = Vector2(-2, -17)
-scale = Vector2(1.28, 1.28)
-
-[connection signal="pressed" from="Node/PuzzleButton" to="." method="_on_puzzle_button_pressed"]
-[connection signal="ready" from="Node/PuzzleButton" to="Node" method="_on_puzzle_button_ready"]
+[connection signal="pressed" from="Sprite2D/TextureButton" to="Sprite2D" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Sprite2D/TextureButton2" to="Sprite2D" method="_on_texture_button_2_pressed"]

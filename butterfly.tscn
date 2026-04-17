@@ -1,34 +1,33 @@
 [gd_scene load_steps=5 format=3 uid="uid://ch6ttr1djeh70"]
 
-[ext_resource type="Texture2D" uid="uid://duqginh6i3ep5" path="res://butterfly_branch_gem.png" id="1_hocdr"]
-[ext_resource type="Script" path="res://butterfly.gd" id="2_hocdr"]
+[ext_resource type="Texture2D" uid="uid://ddrt1mckfrxod" path="res://boss_branch_gem.png" id="1_hocdr"]
+[ext_resource type="Script" uid="uid://cuk4arrdd8agb" path="res://boss.gd" id="2_i02rf"]
 [ext_resource type="Texture2D" uid="uid://bjej8roofjitp" path="res://home button enlarged.png" id="2_tstti"]
 [ext_resource type="Texture2D" uid="uid://bh88qy12xggy6" path="res://start-button-enlarged-pixilart (2).png" id="4_hocdr"]
 
-[node name="Butterfly" type="Node2D"]
+[node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(493.5, 525.93665)
-scale = Vector2(2.5935962, 2.4686813)
+position = Vector2(512.37225, 511.0504)
+scale = Vector2(2.2878408, 3.2605557)
 texture = ExtResource("1_hocdr")
-script = ExtResource("2_hocdr")
+script = ExtResource("2_i02rf")
 
 [node name="TextureButton" type="TextureButton" parent="Sprite2D"]
-offset_left = -189.79291
-offset_top = 0.026351929
-offset_right = -86.92855
-offset_bottom = 103.522675
-scale = Vector2(3.0986607, 1.9058133)
+offset_left = 1.1486206
+offset_top = -198.14124
+offset_right = 190.07861
+offset_bottom = -68.29138
+scale = Vector2(2.1644151, 1.7933004)
 texture_normal = ExtResource("2_tstti")
 
 [node name="TextureButton2" type="TextureButton" parent="Sprite2D"]
-offset_left = -183.72176
-offset_top = -214.66385
-offset_right = -83.721756
-offset_bottom = -114.66385
-scale = Vector2(3.0979588, 2.9999201)
+offset_left = -224.39154
+offset_top = -243.22552
+offset_right = -124.052246
+offset_bottom = -133.50229
+scale = Vector2(2.3717265, 2.2091947)
 texture_normal = ExtResource("4_hocdr")
-stretch_mode = 0
 
 [connection signal="pressed" from="Sprite2D/TextureButton" to="Sprite2D" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Sprite2D/TextureButton2" to="Sprite2D" method="_on_texture_button_2_pressed"]

@@ -1,20 +1,33 @@
-[gd_scene load_steps=3 format=3 uid="uid://5ey6ns8gh8t5"]
+[gd_scene load_steps=5 format=3 uid="uid://5ey6ns8gh8t5"]
 
-[ext_resource type="Texture2D" uid="uid://cwrgfxc7fewwf" path="res://vulturegwc.png" id="1_aaqyy"]
+[ext_resource type="Texture2D" uid="uid://ddrt1mckfrxod" path="res://boss_branch_gem.png" id="1_pqq54"]
+[ext_resource type="Script" uid="uid://cuk4arrdd8agb" path="res://boss.gd" id="2_die2u"]
+[ext_resource type="Texture2D" uid="uid://bjej8roofjitp" path="res://home button enlarged.png" id="3_0gxl8"]
+[ext_resource type="Texture2D" uid="uid://bh88qy12xggy6" path="res://start-button-enlarged-pixilart (2).png" id="4_pphyq"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_aaqyy"]
-radius = 108.41586
-
-[node name="CharacterBody2D2" type="CharacterBody2D"]
-texture_filter = 1
+[node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(344.99997, 175.00002)
-rotation = 3.1372602
-scale = Vector2(-0.9036465, -0.76351565)
-texture = ExtResource("1_aaqyy")
+position = Vector2(512.37225, 511.0504)
+scale = Vector2(2.2878408, 3.2605557)
+texture = ExtResource("1_pqq54")
+script = ExtResource("2_die2u")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(344, 174)
-shape = SubResource("CircleShape2D_aaqyy")
+[node name="TextureButton" type="TextureButton" parent="Sprite2D"]
+offset_left = 1.1486206
+offset_top = -198.14124
+offset_right = 190.07861
+offset_bottom = -68.29138
+scale = Vector2(2.1644151, 1.7933004)
+texture_normal = ExtResource("3_0gxl8")
+
+[node name="TextureButton2" type="TextureButton" parent="Sprite2D"]
+offset_left = -224.39154
+offset_top = -243.22552
+offset_right = -124.052246
+offset_bottom = -133.50229
+scale = Vector2(2.3717265, 2.2091947)
+texture_normal = ExtResource("4_pphyq")
+
+[connection signal="pressed" from="Sprite2D/TextureButton" to="Sprite2D" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Sprite2D/TextureButton2" to="Sprite2D" method="_on_texture_button_2_pressed"]

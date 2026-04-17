@@ -1,51 +1,33 @@
-[gd_scene load_steps=8 format=3 uid="uid://dt1qc80oxfrpu"]
+[gd_scene load_steps=5 format=3 uid="uid://dt1qc80oxfrpu"]
 
-[ext_resource type="Script" uid="uid://dmqwr3gc3oqvn" path="res://scripts/main.gd" id="1_kek77"]
-[ext_resource type="Texture2D" uid="uid://dansjlj8itwe4" path="res://puzzle_background_gem.png" id="2_272bh"]
-[ext_resource type="PackedScene" uid="uid://5ey6ns8gh8t5" path="res://scenes/vulture.tscn" id="3_h2yge"]
-[ext_resource type="PackedScene" uid="uid://lo3cig0voy5d" path="res://scenes/fairy.tscn" id="4_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://b362nmldq8b1a" path="res://scenes/fairy_dialogue.tscn" id="5_lquwl"]
-[ext_resource type="PackedScene" uid="uid://ua3ogns65v1y" path="res://scenes/vultureDialogue.tscn" id="6_7mycd"]
-[ext_resource type="Texture2D" uid="uid://3uroo8yx1a0r" path="res://back-button-enlarged-pixilart.png" id="7_272bh"]
+[ext_resource type="Texture2D" uid="uid://ddrt1mckfrxod" path="res://boss_branch_gem.png" id="1_1bvp3"]
+[ext_resource type="Script" uid="uid://cuk4arrdd8agb" path="res://boss.gd" id="2_lquwl"]
+[ext_resource type="Texture2D" uid="uid://bjej8roofjitp" path="res://home button enlarged.png" id="3_7mycd"]
+[ext_resource type="Texture2D" uid="uid://bh88qy12xggy6" path="res://start-button-enlarged-pixilart (2).png" id="4_272bh"]
 
-[node name="Main" type="Node2D"]
-script = ExtResource("1_kek77")
+[node name="Node2D" type="Node2D"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 1507.0
-offset_bottom = 1028.0
-texture = ExtResource("2_272bh")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(512.37225, 511.0504)
+scale = Vector2(2.2878408, 3.2605557)
+texture = ExtResource("1_1bvp3")
+script = ExtResource("2_lquwl")
 
-[node name="VultureShell" type="CharacterBody2D" parent="TextureRect"]
+[node name="TextureButton" type="TextureButton" parent="Sprite2D"]
+offset_left = 1.1486206
+offset_top = -198.14124
+offset_right = 190.07861
+offset_bottom = -68.29138
+scale = Vector2(2.1644151, 1.7933004)
+texture_normal = ExtResource("3_7mycd")
 
-[node name="Vulture" parent="TextureRect/VultureShell" instance=ExtResource("3_h2yge")]
-position = Vector2(442, 765)
+[node name="TextureButton2" type="TextureButton" parent="Sprite2D"]
+offset_left = -224.39154
+offset_top = -243.22552
+offset_right = -124.052246
+offset_bottom = -133.50229
+scale = Vector2(2.3717265, 2.2091947)
+texture_normal = ExtResource("4_272bh")
 
-[node name="FairyShell" type="CharacterBody2D" parent="TextureRect"]
-
-[node name="Fairy" parent="TextureRect/FairyShell" instance=ExtResource("4_1bvp3")]
-position = Vector2(53, 24)
-
-[node name="FairyDialogueShell" type="CharacterBody2D" parent="TextureRect"]
-
-[node name="fairyDialogue" parent="TextureRect/FairyDialogueShell" instance=ExtResource("5_lquwl")]
-position = Vector2(-60, 12)
-
-[node name="VultureDialogueShell" type="CharacterBody2D" parent="TextureRect"]
-
-[node name="vultureDialogue" parent="TextureRect/VultureDialogueShell" instance=ExtResource("6_7mycd")]
-
-[node name="Cells" type="Node2D" parent="."]
-position = Vector2(375, 375)
-
-[node name="Pieces" type="Node2D" parent="."]
-
-[node name="Puzzle2Button" type="TextureButton" parent="."]
-offset_left = 860.99994
-offset_top = -49.999996
-offset_right = 960.99994
-offset_bottom = 50.000004
-scale = Vector2(1.7183552, 2.0382276)
-texture_normal = ExtResource("7_272bh")
-
-[connection signal="pressed" from="Puzzle2Button" to="." method="_on_puzzle_2_button_pressed"]
+[connection signal="pressed" from="Sprite2D/TextureButton" to="Sprite2D" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Sprite2D/TextureButton2" to="Sprite2D" method="_on_texture_button_2_pressed"]

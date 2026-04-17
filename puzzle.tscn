@@ -1,32 +1,32 @@
 [gd_scene load_steps=5 format=3 uid="uid://dinv38f2v2hgo"]
 
-[ext_resource type="Texture2D" uid="uid://cheyufrxw2oir" path="res://puzzle_branch_gem.png" id="1_q2gwe"]
+[ext_resource type="Texture2D" uid="uid://ddrt1mckfrxod" path="res://boss_branch_gem.png" id="1_q2gwe"]
 [ext_resource type="Texture2D" uid="uid://bjej8roofjitp" path="res://home button enlarged.png" id="2_hgotr"]
-[ext_resource type="Script" uid="uid://ce7tud5ovdx0" path="res://puzzle.gd" id="2_q2gwe"]
+[ext_resource type="Script" uid="uid://cuk4arrdd8agb" path="res://boss.gd" id="2_re6l2"]
 [ext_resource type="Texture2D" uid="uid://bh88qy12xggy6" path="res://start-button-enlarged-pixilart (2).png" id="4_q2gwe"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(514.49994, 525.9246)
-scale = Vector2(2.391304, 2.5087547)
+position = Vector2(512.37225, 511.0504)
+scale = Vector2(2.2878408, 3.2605557)
 texture = ExtResource("1_q2gwe")
-script = ExtResource("2_q2gwe")
+script = ExtResource("2_re6l2")
 
 [node name="TextureButton" type="TextureButton" parent="Sprite2D"]
-offset_left = -127.03194
-offset_top = -0.779068
-offset_right = 190.12141
-offset_bottom = 212.92839
-scale = Vector2(3.4892292, 2.4066567)
+offset_left = 1.1486206
+offset_top = -198.14124
+offset_right = 190.07861
+offset_bottom = -68.29138
+scale = Vector2(2.1644151, 1.7933004)
 texture_normal = ExtResource("2_hgotr")
 
 [node name="TextureButton2" type="TextureButton" parent="Sprite2D"]
-offset_left = -96.893394
-offset_top = -237.98904
-offset_right = 7.3760757
-offset_bottom = -137.98904
-scale = Vector2(3.1143548, 3.6267612)
+offset_left = -224.39154
+offset_top = -243.22552
+offset_right = -124.052246
+offset_bottom = -133.50229
+scale = Vector2(2.3717265, 2.2091947)
 texture_normal = ExtResource("4_q2gwe")
 
 [connection signal="pressed" from="Sprite2D/TextureButton" to="Sprite2D" method="_on_texture_button_pressed"]
