@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://djjo65am8fqb4"]
+[gd_scene load_steps=14 format=3 uid="uid://djjo65am8fqb4"]
 
 [ext_resource type="Texture2D" uid="uid://b0nobl3qd0fed" path="res://trasnparent_tree_gem.png" id="1_iotsf"]
 [ext_resource type="Script" uid="uid://bqn5prolgibud" path="res://maintree.gd" id="2_mfdv2"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://c5v6dqu07kjje" path="res://boss-pixilart (2).png" id="9_hve3p"]
 [ext_resource type="Texture2D" uid="uid://c4ov3ux8s6xtt" path="res://butterfly-card-2-pixilart (2).png" id="10_lc2xo"]
 [ext_resource type="Texture2D" uid="uid://by7tghn6gi3pa" path="res://puzzle2.png" id="11_215e1"]
+[ext_resource type="Texture2D" uid="uid://b5unk2wd7mlv5" path="res://reroot_title-Picsart-BackgroundRemover.png" id="12_215e1"]
 [ext_resource type="Texture2D" uid="uid://dbnge4gqikwmi" path="res://background_night.jpg" id="12_lc2xo"]
 
 [node name="Game" type="Node2D"]
@@ -22,8 +23,8 @@ position = Vector2(3, 163)
 
 [node name="Sprite2D" type="Sprite2D" parent="Tree"]
 top_level = true
-position = Vector2(516, 534)
-scale = Vector2(1.1775835, 1.2264593)
+position = Vector2(695, 562)
+scale = Vector2(0.9638955, 1.0532296)
 texture = ExtResource("1_iotsf")
 script = ExtResource("2_mfdv2")
 
@@ -67,16 +68,17 @@ metadata/_edit_use_anchors_ = true
 top_level = true
 anchors_preset = -1
 anchor_left = 0.245
-anchor_top = 0.61021096
-anchor_right = 0.347637
-anchor_bottom = 0.73269516
-offset_left = -200.88
-offset_top = 71.14398
-offset_right = 47.464355
-offset_bottom = 290.1938
+anchor_top = 0.5486875
+anchor_right = 0.35835627
+anchor_bottom = 0.68935543
+offset_left = -231.88
+offset_top = -364.85602
+offset_right = 16.464355
+offset_bottom = -145.80615
 scale = Vector2(0.9110338, 0.9666924)
 texture_normal = ExtResource("6_mfdv2")
 texture_hover = ExtResource("7_iotsf")
+ignore_texture_size = true
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
@@ -87,10 +89,10 @@ anchor_left = -0.01171869
 anchor_top = 0.1479742
 anchor_right = 0.1875894
 anchor_bottom = 0.37027645
-offset_left = 704.99994
-offset_top = 553.4744
-offset_right = 804.99994
-offset_bottom = 653.4746
+offset_left = 32.99994
+offset_top = 547.4744
+offset_right = 132.99994
+offset_bottom = 647.4746
 scale = Vector2(1.0556031, 0.9888976)
 texture_normal = ExtResource("8_vef74")
 texture_hover = ExtResource("9_hve3p")
@@ -104,14 +106,18 @@ anchor_left = -0.0107421875
 anchor_top = 0.0018281937
 anchor_right = 0.2197265
 anchor_bottom = 0.2376287
-offset_left = 376.0
-offset_top = 697.1279
-offset_right = 476.00006
-offset_bottom = 780.1155
+offset_left = 28.0
+offset_top = 446.12793
+offset_right = 128.00006
+offset_bottom = 529.1155
 texture_normal = ExtResource("10_lc2xo")
 texture_hover = ExtResource("11_215e1")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
+
+[node name="RerootTitlePicsartBackgroundRemover" type="Sprite2D" parent="Tree/Sprite2D"]
+position = Vector2(-22.824036, -375.9864)
+texture = ExtResource("12_215e1")
 
 [node name="BackgroundNight" type="Sprite2D" parent="Tree"]
 position = Vector2(512.5, 347.5)
