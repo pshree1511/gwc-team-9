@@ -14,6 +14,9 @@ var hit = false
 
 signal game_over
 
+func _ready():
+	add_to_group("fireball")
+
 @export var speed := 400.0
 var direction := Vector2.ZERO
 

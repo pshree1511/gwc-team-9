@@ -21,6 +21,9 @@ func _on_monster_finished_shooting():
 	get_tree().paused = true
 	win_ui.show()
 	
+	for fireball in get_tree().get_nodes_in_group("fireball"):
+		fireball.queue_free()
+	
 
 func _on_game_over():
 	game_over_ui.show()
