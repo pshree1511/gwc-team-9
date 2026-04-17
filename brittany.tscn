@@ -106,5 +106,13 @@ visible = false
 position = Vector2(-2, -17)
 scale = Vector2(1.28, 1.28)
 
+[node name="Label" type="Label" parent="."]
+offset_left = -164.0
+offset_top = 91.0
+offset_right = -11.0
+offset_bottom = 114.0
+theme_override_font_sizes/font_size = 8
+text = "Press Shift for Hint"
+
 [connection signal="pressed" from="Node/PuzzleButton" to="." method="_on_puzzle_button_pressed"]
 [connection signal="ready" from="Node/PuzzleButton" to="Node" method="_on_puzzle_button_ready"]

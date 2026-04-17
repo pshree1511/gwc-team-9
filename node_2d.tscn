@@ -151,9 +151,17 @@ position = Vector2(96.999985, -166.99998)
 scale = Vector2(0.55264306, 0.6459205)
 texture = ExtResource("10_hqns4")
 
+[node name="Label" type="Label" parent="."]
+offset_left = -63.0
+offset_top = 698.0
+offset_right = 109.0
+offset_bottom = 733.0
+theme_override_font_sizes/font_size = 25
+text = "Space to Jump"
+
 [connection signal="pressed" from="Monster/TextureButton" to="Monster" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="YouWin/home" to="." method="_on_home_pressed"]
 [connection signal="pressed" from="YouWin/home" to="." method="_on_texture_button_pressed"]
-[connection signal="pressed" from="GameOver/backhome" to="." method="_on_backhome_pressed"]
+[connection signal="pressed" from="YouWin/home" to="." method="_on_home_pressed"]
 [connection signal="pressed" from="GameOver/backhome" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="GameOver/backhome" to="." method="_on_backhome_pressed"]
 [connection signal="pressed" from="GameOver/retry" to="." method="_on_retry_pressed"]
