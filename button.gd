@@ -28,6 +28,8 @@ func _on_line_edit_2_text_submitted(new_text: String) -> void:
 		Line.clear()
 		change()
 		%Button.hide()
+		$PuzzleButton.show() #show back to home button
+		Globals.puzzle_button_visible = true #show start for puzzle game
 	else:
 		Line.clear()
 	emit_signal("text_edited", solved)

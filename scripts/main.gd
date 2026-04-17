@@ -6,16 +6,19 @@ extends Node2D
 @onready var pieces = $Pieces
 @onready var piece_scene = preload("res://scenes/new scens/PuzzlePiece.tscn")
 
+@onready var puzzle_button = $Puzzle2Button
+
 #var piece_size: Vector2 = Vector2.ZERO
 var piece_size: Vector2 = Vector2(100,100)
 
-
 func _ready():
+	g.puzzle_solved.connect(_on_puzzle_solved)
 	init_game()
 	
 func init_game():
 	generate_pieces()
 	draw_cells()
+
 	
 func draw_cells():
 	for i in range(g.grid_size.x):
@@ -75,7 +78,9 @@ func generate_pieces():
 			)
 			
 	
-
+func _on_puzzle_solved():
+	$Puzzle2Button.show()
+	Globals.boss_button_visible = true
 
 func _on_puzzle_2_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://game.tscn")

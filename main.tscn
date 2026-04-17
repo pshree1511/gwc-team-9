@@ -41,6 +41,7 @@ position = Vector2(375, 375)
 [node name="Pieces" type="Node2D" parent="."]
 
 [node name="Puzzle2Button" type="TextureButton" parent="."]
+visible = false
 offset_left = 826.0
 offset_top = 3.0000038
 offset_right = 926.0

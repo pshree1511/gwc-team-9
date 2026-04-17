@@ -3,6 +3,7 @@ extends Node
 var cells = []
 var pieces = []
 var dragging = false # global dragging, to avoid dragging multiple pieces
+signal puzzle_solved 
 
 const images = [
 	"res://scenes/new scens/PuzzlePictures/Valley3.jpg",
@@ -42,3 +43,5 @@ func check_win():
 		if piece.index != piece.cell_index:
 			return
 	print("YOU WON!")
+	emit_signal("puzzle_solved")
+	return true

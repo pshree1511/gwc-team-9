@@ -1,6 +1,6 @@
-[gd_scene load_steps=14 format=3 uid="uid://djjo65am8fqb4"]
+[gd_scene load_steps=15 format=3 uid="uid://djjo65am8fqb4"]
 
-[ext_resource type="Texture2D" uid="uid://b0nobl3qd0fed" path="res://trasnparent_tree_gem.png" id="1_iotsf"]
+[ext_resource type="Texture2D" uid="uid://cl5ref5flu81y" path="res://transparent_infected_tree_gem.png" id="1_lc2xo"]
 [ext_resource type="Script" uid="uid://bqn5prolgibud" path="res://maintree.gd" id="2_mfdv2"]
 [ext_resource type="Texture2D" uid="uid://b7pfqif0jmp27" path="res://greenquestion.png" id="3_fc0e3"]
 [ext_resource type="Texture2D" uid="uid://cn4honfvnwari" path="res://pixil-frame-0 (5).png" id="4_j5wjh"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://by7tghn6gi3pa" path="res://puzzle2.png" id="11_215e1"]
 [ext_resource type="Texture2D" uid="uid://b5unk2wd7mlv5" path="res://reroot_title-Picsart-BackgroundRemover.png" id="12_215e1"]
 [ext_resource type="Texture2D" uid="uid://dbnge4gqikwmi" path="res://background_night.jpg" id="12_lc2xo"]
+[ext_resource type="Texture2D" uid="uid://n1m3vv06e365" path="res://healthy_tree_gem.png" id="13_215e1"]
 
 [node name="Game" type="Node2D"]
 position = Vector2(3, 163)
@@ -21,14 +22,14 @@ position = Vector2(3, 163)
 
 [node name="Tree" type="Node2D" parent="."]
 
-[node name="Sprite2D" type="Sprite2D" parent="Tree"]
+[node name="InfectedTree" type="Sprite2D" parent="Tree"]
 top_level = true
 position = Vector2(695, 562)
 scale = Vector2(0.9638955, 1.0532296)
-texture = ExtResource("1_iotsf")
+texture = ExtResource("1_lc2xo")
 script = ExtResource("2_mfdv2")
 
-[node name="TextureButton" type="TextureButton" parent="Tree/Sprite2D"]
+[node name="TextureButton" type="TextureButton" parent="Tree/InfectedTree"]
 anchors_preset = -1
 anchor_right = 0.120137244
 anchor_bottom = 0.19674669
@@ -40,19 +41,19 @@ texture_normal = ExtResource("3_fc0e3")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="TextureButton2" type="TextureButton" parent="Tree/Sprite2D"]
+[node name="TextureButton2" type="TextureButton" parent="Tree/InfectedTree"]
 anchors_preset = -1
 anchor_right = 0.11026665
 anchor_bottom = 0.17907077
-offset_left = -148.31311
-offset_top = -327.46198
-offset_right = -98.31311
-offset_bottom = -277.46198
+offset_left = -151.46866
+offset_top = -345.60367
+offset_right = -101.46866
+offset_bottom = -295.60367
 texture_normal = ExtResource("4_j5wjh")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="TextureButton3" type="TextureButton" parent="Tree/Sprite2D"]
+[node name="TextureButton3" type="TextureButton" parent="Tree/InfectedTree"]
 anchors_preset = -1
 anchor_right = 0.12652187
 anchor_bottom = 0.19879216
@@ -64,7 +65,7 @@ texture_normal = ExtResource("5_vef74")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="TextureButton4" type="TextureButton" parent="Tree/Sprite2D"]
+[node name="TextureButton4" type="TextureButton" parent="Tree/InfectedTree"]
 top_level = true
 anchors_preset = -1
 anchor_left = 0.245
@@ -82,7 +83,7 @@ ignore_texture_size = true
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="TextureButton5" type="TextureButton" parent="Tree/Sprite2D"]
+[node name="TextureButton5" type="TextureButton" parent="Tree/InfectedTree"]
 top_level = true
 anchors_preset = -1
 anchor_left = -0.01171869
@@ -99,7 +100,7 @@ texture_hover = ExtResource("9_hve3p")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="TextureButton6" type="TextureButton" parent="Tree/Sprite2D"]
+[node name="TextureButton6" type="TextureButton" parent="Tree/InfectedTree"]
 top_level = true
 anchors_preset = -1
 anchor_left = -0.0107421875
@@ -115,7 +116,106 @@ texture_hover = ExtResource("11_215e1")
 stretch_mode = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="RerootTitlePicsartBackgroundRemover" type="Sprite2D" parent="Tree/Sprite2D"]
+[node name="RerootTitlePicsartBackgroundRemover" type="Sprite2D" parent="Tree/InfectedTree"]
+position = Vector2(-22.824036, -375.9864)
+texture = ExtResource("12_215e1")
+
+[node name="InfectedTree2" type="Sprite2D" parent="Tree"]
+visible = false
+top_level = true
+position = Vector2(695, 562)
+scale = Vector2(0.9638955, 1.0532296)
+texture = ExtResource("13_215e1")
+script = ExtResource("2_mfdv2")
+
+[node name="TextureButton" type="TextureButton" parent="Tree/InfectedTree2"]
+anchors_preset = -1
+anchor_right = 0.120137244
+anchor_bottom = 0.19674669
+offset_left = -268.74054
+offset_top = -111.423065
+offset_right = -218.74054
+offset_bottom = -61.423065
+texture_normal = ExtResource("3_fc0e3")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton2" type="TextureButton" parent="Tree/InfectedTree2"]
+anchors_preset = -1
+anchor_right = 0.11026665
+anchor_bottom = 0.17907077
+offset_left = -148.31311
+offset_top = -327.46198
+offset_right = -98.31311
+offset_bottom = -277.46198
+texture_normal = ExtResource("4_j5wjh")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton3" type="TextureButton" parent="Tree/InfectedTree2"]
+anchors_preset = -1
+anchor_right = 0.12652187
+anchor_bottom = 0.19879216
+offset_left = 96.25869
+offset_top = -177.41315
+offset_right = 146.25868
+offset_bottom = -127.41315
+texture_normal = ExtResource("5_vef74")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton4" type="TextureButton" parent="Tree/InfectedTree2"]
+top_level = true
+anchors_preset = -1
+anchor_left = 0.245
+anchor_top = 0.5486875
+anchor_right = 0.35835627
+anchor_bottom = 0.68935543
+offset_left = -231.88
+offset_top = -364.85602
+offset_right = 16.464355
+offset_bottom = -145.80615
+scale = Vector2(0.9110338, 0.9666924)
+texture_normal = ExtResource("6_mfdv2")
+texture_hover = ExtResource("7_iotsf")
+ignore_texture_size = true
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton5" type="TextureButton" parent="Tree/InfectedTree2"]
+top_level = true
+anchors_preset = -1
+anchor_left = -0.01171869
+anchor_top = 0.1479742
+anchor_right = 0.1875894
+anchor_bottom = 0.37027645
+offset_left = 32.99994
+offset_top = 547.4744
+offset_right = 132.99994
+offset_bottom = 647.4746
+scale = Vector2(1.0556031, 0.9888976)
+texture_normal = ExtResource("8_vef74")
+texture_hover = ExtResource("9_hve3p")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton6" type="TextureButton" parent="Tree/InfectedTree2"]
+top_level = true
+anchors_preset = -1
+anchor_left = -0.0107421875
+anchor_top = 0.0018281937
+anchor_right = 0.2197265
+anchor_bottom = 0.2376287
+offset_left = 28.0
+offset_top = 446.12793
+offset_right = 128.00006
+offset_bottom = 529.1155
+texture_normal = ExtResource("10_lc2xo")
+texture_hover = ExtResource("11_215e1")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="RerootTitlePicsartBackgroundRemover" type="Sprite2D" parent="Tree/InfectedTree2"]
 position = Vector2(-22.824036, -375.9864)
 texture = ExtResource("12_215e1")
 
@@ -124,10 +224,17 @@ position = Vector2(512.5, 347.5)
 scale = Vector2(1.0029297, 1.0244141)
 texture = ExtResource("12_lc2xo")
 
-[connection signal="pressed" from="Tree/Sprite2D/TextureButton" to="Tree/Sprite2D" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="Tree/Sprite2D/TextureButton" to="Tree/Sprite2D/TextureButton" method="_on_pressed"]
-[connection signal="pressed" from="Tree/Sprite2D/TextureButton2" to="Tree/Sprite2D" method="_on_texture_button_2_pressed"]
-[connection signal="pressed" from="Tree/Sprite2D/TextureButton3" to="Tree/Sprite2D" method="_on_texture_button_3_pressed"]
-[connection signal="pressed" from="Tree/Sprite2D/TextureButton4" to="Tree/Sprite2D" method="_on_texture_button_4_pressed"]
-[connection signal="pressed" from="Tree/Sprite2D/TextureButton5" to="Tree/Sprite2D" method="_on_texture_button_5_pressed"]
-[connection signal="pressed" from="Tree/Sprite2D/TextureButton6" to="Tree/Sprite2D" method="_on_texture_button_6_pressed"]
+[connection signal="pressed" from="Tree/InfectedTree/TextureButton" to="Tree/InfectedTree" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Tree/InfectedTree/TextureButton" to="Tree/InfectedTree/TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="Tree/InfectedTree/TextureButton2" to="Tree/InfectedTree" method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="Tree/InfectedTree/TextureButton3" to="Tree/InfectedTree" method="_on_texture_button_3_pressed"]
+[connection signal="pressed" from="Tree/InfectedTree/TextureButton4" to="Tree/InfectedTree" method="_on_texture_button_4_pressed"]
+[connection signal="pressed" from="Tree/InfectedTree/TextureButton5" to="Tree/InfectedTree" method="_on_texture_button_5_pressed"]
+[connection signal="pressed" from="Tree/InfectedTree/TextureButton6" to="Tree/InfectedTree" method="_on_texture_button_6_pressed"]
+[connection signal="pressed" from="Tree/InfectedTree2/TextureButton" to="Tree/InfectedTree2" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Tree/InfectedTree2/TextureButton" to="Tree/InfectedTree2/TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="Tree/InfectedTree2/TextureButton2" to="Tree/InfectedTree2" method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="Tree/InfectedTree2/TextureButton3" to="Tree/InfectedTree2" method="_on_texture_button_3_pressed"]
+[connection signal="pressed" from="Tree/InfectedTree2/TextureButton4" to="Tree/InfectedTree2" method="_on_texture_button_4_pressed"]
+[connection signal="pressed" from="Tree/InfectedTree2/TextureButton5" to="Tree/InfectedTree2" method="_on_texture_button_5_pressed"]
+[connection signal="pressed" from="Tree/InfectedTree2/TextureButton6" to="Tree/InfectedTree2" method="_on_texture_button_6_pressed"]

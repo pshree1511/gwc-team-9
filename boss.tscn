@@ -24,6 +24,7 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TextureButton2" type="TextureButton" parent="Sprite2D"]
+visible = false
 offset_left = -170.49835
 offset_top = -93.48584
 offset_right = -108.076065

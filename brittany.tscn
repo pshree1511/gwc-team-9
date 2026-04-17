@@ -90,6 +90,7 @@ offset_right = -8.0
 offset_bottom = 118.0
 
 [node name="PuzzleButton" type="TextureButton" parent="Node"]
+visible = false
 layout_mode = 0
 offset_left = -125.0
 offset_top = -196.0
